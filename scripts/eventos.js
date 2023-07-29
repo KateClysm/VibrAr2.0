@@ -2,35 +2,35 @@ const artistasBaners = `{
     "artista" : [
       {
         "nombre" : "Taylor Swift",
-        "baner" : "resources/taylorbaner.jpg",
+        "baner" : "/resources/taylorbaner.jpg",
         "link" : "taylor.html",
         "alt" : "Baner Taylor Swift",
         "identificacion" : "TaylorSwift"
       },
       {
         "nombre" : "The Weeknd",
-        "baner" : "resources/theweekndbaner.jpg",
+        "baner" : "/resources/theweekndbaner.jpg",
         "link" : "theweeknd.html",
         "alt" : "Baner The Weeknd",
         "identificacion" : "TheWeeknd"
       },
       {
         "nombre" : "Evanescence",
-        "baner" : "resources/Evanescencebaner.jpg",
+        "baner" : "/resources/Evanescencebaner.jpg",
         "link" : "evanescence.html",
         "alt" : "Baner Evanescence",
         "identificacion" : "Evanescence"
       },
       {
         "nombre" : "Maneskin",
-        "baner" : "resources/maneskinbaner.jpg",
+        "baner" : "/resources/maneskinbaner.jpg",
         "link" : "maneskin.html",
         "alt" : "Baner Maneskin",
         "identificacion" : "Maneskin"
       },
       {
         "nombre" : "Red Hot Chili Peppers",
-        "baner" : "resources/rhcpbaner.png",
+        "baner" : "/resources/rhcpbaner.png",
         "link" : "redhot.html",
         "alt" : "Red Hot Chili Peppers",
         "identificacion" : "RedHotChiliPeppers"
