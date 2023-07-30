@@ -1,0 +1,167 @@
+.baner{padding: 3rem 0;}
+.baner img{width: 82vw;}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.venta-general{
+background-color:#2B879E;
+color: var(--blanco);
+text-align: center;
+font-size: 1.2rem;
+padding: 1rem;
+border-radius: 3px;
+}
+
+.fechas{
+padding-top: 2rem;
+}
+
+.fechas h3{
+font-size: 1.2rem;
+padding: 1rem 0.2rem;
+font-weight: bolder;
+}
+
+.contenedor-fechas{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.grid-fecha{
+display: grid;
+grid-template-columns: auto auto auto;
+border-bottom: 0.1rem solid rgba(128, 128, 128, 0.651);
+padding: 0.6rem 0.2rem;
+text-align: center;
+}
+.grid-fecha:last-child {border-bottom: none;} /*quita el borde a la última fecha*/
+
+.separador{
+height: 30px;
+background-color: rgb(199, 199, 199);
+width: 90vw;
+}
+
+.padding-separador{
+padding: 3rem 0;
+}
+.container-blanco{
+flex-direction: column;
+}
+
+.entradas{
+display: flex;
+align-items: center;
+padding-bottom: 1rem;
+}
+.entradas h3{
+font-weight: bold;
+font-size: 1.2rem;
+}
+.entradas img{
+height: 45px;
+}
+.compra-ubicacion p{
+font-size: 1.1rem;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+    padding-top: 2rem;
+}
+
+.container-ubicacion h3{
+background-color: #2B879E;
+border-radius: 3px;
+color: var(--blanco);
+padding: 1rem 0.5rem;
+text-align: center;
+width: 400px;
+}
+
+.container-ubicacion a{
+border: 1px solid grey;
+border-radius: 2px;
+padding: 0.5rem;
+display: flex;
+justify-content: center;
+}
+.caja:hover > i, .caja:hover >h4 {
+color: var(--turqueza);
+}
+.caja h4{color: var(--negro);}
+
+.caja i{
+padding-right: 0.5rem;
+color: rgb(97, 97, 97);
+}
+.texto-ubicacion{
+    width: 200px;
+    display: flex;
+    align-self: self-end;
+    padding-bottom: 0.5rem;
+}
+
+.datos{
+    padding: 1rem 0;
+}
+
+.datos h4, .datos u{
+    padding-bottom: 0.5rem;
+}
+
+.slider{
+    height: 450px;
+    width: 900px;
+    background-color: var(--fucsia);
+}
+.visual{
+    display: flex;
+    justify-content: center;
+}
+
+.logos img{
+    height: 40px;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+}
+.presentado h3{
+    font-weight: bold;
+}
+
+.presentado-insta{
+    display: grid; 
+    grid-template-columns: 3fr 4fr;
+    column-gap: 5rem;
+}
+.insta{
+    width: 100%;
+    background-color: var(--fucsia);
+    height: 100px;
+    border-radius: 3px;
+    padding: 1.5rem;
+}
+.instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto{
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+.datos h4{
+    color: var(--fucsia);
+    font-size: 1.2rem;
+    font-weight: bold;
+}

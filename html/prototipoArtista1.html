@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VibrAr - Taylor Swift</title>
+
+   <!--ÍCONO DE LA PÁGINA-->
+   <link rel="icon" type="image/png" href="resources/miniVibrarBlanco.png">
+     
+    <!--CSS GENERAL-->
+    <link rel="stylesheet" href="/css/general.css">
+
+    <!--CSS PARTICULAR-->
+    <link rel="stylesheet" href="/css/prototipoArtista1.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tauri&display=swap" rel="stylesheet">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="container-nav">
+        <div class="logo">
+            <img src="/resources/vibrarBlanco.png" alt="Logo de VibrAr">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/html/eventos.html">Eventos</a></li>
+                <li><a href="/html/nosotros.html">Nosotros</a></li>
+                <li><a href="/html/contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <a onclick="abrirNavegador()" class="menu" href="#">
+            <i class="fa-solid fa-bars icono-menu"></i>
+        </a>
+
+        <div id="mobile-menu" class="overlay">
+            <a onclick="cerrarNavegador()" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="/index.html">Inicio</a>
+                <a href="/html/eventos.html">Eventos</a>
+                <a href="/html/nosotros.html">Nosotros</a>
+                <a href="/html/contactos.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-padre centradoAbsoluto">
+        <div class="container-blanco centradoAbsoluto">
+            <div class="container-section">
+
+                <div class="baner">
+                    <img src="/resources/taylorbaner.jpg" alt="Baner Eras Tour Taylor Swift">
+                </div>
+
+                <div class="info">
+
+                    <h2 class="venta-general">VENTA GENERAL 06/05</h2>
+
+                    <div class="fechas">
+                        <h3>Fechas Disponibles</h3>
+                        <div class="contenedor-fechas">
+                            <div class="grid-fecha">
+                                <div class="dia">09 de Noviembre</div>
+                                <div class="lugar">Buenos Aires, Argentina</div>
+                                <div class="locacion">Estadio River Plate</div>
+                            </div>
+                            <div class="grid-fecha">
+                                <div class="dia">10 de Noviembre</div>
+                                <div class="lugar">Buenos Aires, Argentina</div>
+                                <div class="locacion">Estadio River Plate</div>
+                            </div>
+                            <div class="grid-fecha">
+                                <div class="dia">11 de Noviembre</div>
+                                <div class="lugar">Buenos Aires, Argentina</div>
+                                <div class="locacion">Estadio River Plate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="padding-separador"><div class="separador"></div></div>
+
+            <div class="container-section compra-ubicacion">
+                <div class="entradas">
+                    <h3>Adquiere tus entradas con facilidad a través de</h3>
+                    <img src="/resources/allaccess.png" alt="Logo AllAccess">
+                </div>
+                <p>All Access es la solución ideal para comprar entradas de tus eventos favoritos de manera rápida y sencilla. Esta plataforma en línea te ofrece una experiencia completa para adquirir boletos de conciertos, festivales, eventos deportivos, obras de teatro y más. Es la elección preferida de los entusiastas del entretenimiento en todo el mundo.</p>
+
+                <div class="ubicacion">
+                    <div class="container-ubicacion">
+                        <!-- <h3>UBICACIÓN DEL EVENTO</h3> -->
+                        <div class="datos">
+                            <h4>Estadio River Plate</h4>
+                            <p class="u">Av. Pres. Figueroa Alcorta 7567</p>
+                            <p>CABA</p>
+                        </div>
+                        <a href="#" class="caja">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <h4>Como llegar al evento</h4>
+                        </a>
+                    </div>
+                    <p class="texto-ubicacion"> Este es el lugar donde la magia sucederá. ¡Esperamos que disfrutes de una experiencia inolvidable!"</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="padding-separador"><div class="separador"></div></div>
+
+
+
+
+            <div class="container-section visual">
+                <div class="slider"></div>
+            </div>
+
+
+
+
+
+            <div class="padding-separador"><div class="separador"></div></div>
+
+
+
+            <div class="container-section presentado-insta">
+              <div class="presentado">
+                <h3 class="texto">
+                    Este emocionante evento es posible gracias a la colaboración de dos grandes nombres en el mundo del entretenimiento: 
+                </h3>
+                <div class="logos">
+                    <a href="#">
+                        <img src="/resources/allaccess.png" alt="Logo AllAccess">
+                    </a>
+                    <a href="#">
+                        <img src="/resources/DF-dark.svg" alt="Logo DF entertainment">
+                    </a>
+                    
+                </div>
+                <p class="texto">
+                    Prepárate para disfrutar de una experiencia única llena de diversión y entretenimiento, cortesía de estos destacados promotores.
+                </p>
+              </div>
+
+
+              <div class="instagram">
+                <p class="texto">
+                    Conéctate con el artista en redes sociales. Sigue su cuenta oficial de Instagram para estar al tanto de noticias, actualizaciones, momentos detrás del escenario y contenido exclusivo. Únete a la comunidad de fans y comparte la pasión por la música y el arte de este talentoso artista.
+                </p>
+                <div class="insta"></div>
+              </div>
+            </div>
+
+            <div class="padding-separador"><div class="separador"></div></div>
+        </div>
+    </div>
+
+
+
+
+    
+    <footer class="centradoAbsoluto">
+        <div class="container-blanco centradoAbsoluto">
+            <div class="container-section footer">
+
+                <div class="redes centradoAbsoluto">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram icons-footer"> <p>VibrAr</p> </i> 
+                    </a>
+        
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook icons-footer"> <p>VibrAr Oficial</p> </i> 
+                    </a>
+    
+                    <a href="#">
+                        <i class="fa-brands fa-square-twitter icons-footer"> <p>VibrArg</p> </i> 
+                    </a>  
+                </div>
+
+                <div class="derechos centradoAbsoluto">    
+                    <a href="https://github.com/KateClysm/VibrAr" target="_blank">© Derechos reservados por
+                        <i class="fa-brands fa-github icons-footer"> <p>VibrAr Proyect</p> </i> 
+                    </a>     
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+
+    <!--nav script-->
+    <script src="/scripts/nav.js"></script>
+</body>
+</html>
