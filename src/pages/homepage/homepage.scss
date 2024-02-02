@@ -4,26 +4,29 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    margin-top: 4rem;
 
     .container{
-        border: 1px solid red;
+        outline: 1px solid red;
         width: 80vw;
-        margin-top: 5rem;
+        height: calc(100vh - 4rem);
         display: flex;
         justify-content: center;
-        
+        align-items: flex-start;
+        padding: 2rem 0;
 
         .slide-show{
-            display: flex;
-            justify-content: center;
-            width: 70vw;
+            outline: 1px solid blue;
+            // margin: auto;
+            width: 80%;
+            aspect-ratio: calc(16/6);
+            overflow: hidden;
+            border-radius: 1rem;
             position: relative;
-            height: fit-content;
-            
 
 
             button{
-                padding: 0.3rem;
+                padding: 0.2rem;
                 border-radius: 50%;
                 border: none;
                 background-color: var(--black-color);
@@ -41,20 +44,24 @@
             .prevButton{
                 position: absolute;
                 top: 50%;
-                left: 1rem;
+                left: 1%;
                 transform: translateY(-50%);
             }
             .nextButton{
                 position: absolute;
                 top: 50%;
-                right: 1rem;
+                right: 1%;
                 transform: translateY(-50%);
             }
 
             .slide{
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
-                height: fit-content;
-                border-radius: 1rem;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
             }
         }
     }
