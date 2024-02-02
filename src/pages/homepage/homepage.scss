@@ -1,15 +1,14 @@
 .homepage{
-    background-color: var(--white-color);
+    // background-color: var(--white-color);
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    row-gap: 2rem;
     
 
     .container-slider{
         margin-top: 4rem;
-        outline: 1px solid red;
         width: 80vw;
         display: flex;
         justify-content: center;
@@ -17,20 +16,23 @@
         padding: 2rem 0;
 
         .slide-show{
-            // outline: 1px solid blue;
-            // margin: auto;
-            width: 80%;
+            width: 85%;
             aspect-ratio: calc(16/6);
             overflow: hidden;
-            border-radius: 1rem;
+            border-radius: 32px;
             position: relative;
-
+            background: linear-gradient(to right, rgba(255, 0, 0, 0.34), rgba(128, 0, 128, 0.399));
+            transition: background 0.3s ease;
+            &:hover {
+                cursor: pointer;
+                
+            }
 
             button{
                 padding: 0.2rem;
                 border-radius: 50%;
                 border: none;
-                background-color: var(--black-color);
+                background-color: rgba(253, 126, 236, 0.88);
                 cursor: pointer;
                 text-align: center;
                 color: var(--white-color);
@@ -56,6 +58,7 @@
             }
 
             .slide{
+                
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -63,32 +66,159 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
-            }
+                border: 3px solid var(--white-color);
+                border-radius: 15px;
+
+                border-radius: 32px;
+                box-shadow:  27px 27px 75px #4e314a,
+                            -27px -27px 75px rgba(255, 255, 255, 0.667);
+                }
         }
     }
 
     .container-info{
         width: 80vw;
-        outline: 1px solid green;
         .oficiales, .gossip{
+            position: relative;
             height: 30vh;
             width: 100%;
-            outline: 1px solid red;
+            
+            border-radius: 32px;
+            background: #e0e0e0;
+            box-shadow:  27px 27px 75px #4e314a,
+                        -27px -27px 75px rgba(255, 255, 255, 0.364);
+            padding-top: 1rem;
+            
+            display: flex;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+
+           text-align: center;
+           img{
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 350px 0px 32px 32px;
+           }
+            
+            h4{
+                padding-top: 1rem;
+                position: relative;
+            }
+            
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: 1rem;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: transparent;
+                transition: background-color 0.3s ease; 
+                z-index: 0; 
+                
+            }
+    
+            &:hover::before {
+                background-color: #d316b349;
+                
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
         }
+
+        .oficiales{
+           img{
+            border-radius: 350px 0px 32px 32px;
+           }
+        }
+
+        .gossip{
+            img{
+             border-radius: 0px 350px 32px 32px;
+             object-position: center;
+            }
+         }
+
     }
 
     .container-fotografias{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 70vh;
         width: 80vw;
+        padding-top: 4rem;
+        .text{
+            border-radius: 32px;
+            background: #e0e0e0;
+            box-shadow:  27px 27px 75px #4e314a,
+                        -27px -27px 75px rgba(255, 255, 255, 0.667);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        h3{
+            padding-bottom: 2rem;
+        }
         
-        outline: 1px solid blue;
+
+        .grid-fotos > .div-foto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            &:hover{
+                cursor: pointer;
+                background: linear-gradient(to right, rgba(255, 0, 0, 0.34), rgba(128, 0, 128, 0.399));
+                padding: 0.2rem;
+                transition: 0.5s;
+                border-radius: 5px;
+            }
+        }
+
+        .grid-fotos > div > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+
+        }
         .grid-fotos{
+            width: 100%;
             display: grid;
-            grid-template-columns: 2fr 2fr 2fr;
-           
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+
+            .img{
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            .wide{
+                grid-column: span 2;
+            }
+
+            .tall{
+                grid-row: span 2;
+            }
+
+            .big{
+                grid-column: span 2;
+                grid-row: span 2;
+            }
         }
     }
 }
@@ -98,13 +228,11 @@
         .container-info{
             display: flex;
             justify-content: center;
-            width: 65%;
+            width: 70%;
             column-gap: 3%;
 
             .oficiales, .gossip{
-                height: 40vh;
-                width: 100%;
-                outline: 1px solid red;
+                height: 45vh;
             }
         }
     }
