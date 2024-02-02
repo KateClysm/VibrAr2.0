@@ -1,0 +1,83 @@
+.container-general{
+    width: 100%;
+<<<<<<< HEAD
+    background-color: var(--blanco);
+=======
+>>>>>>> prototipo
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+    color: var(--blanco);
+}
+.container404{
+<<<<<<< HEAD
+    background-color: var(--blanco);
+=======
+>>>>>>> prototipo
+    height: 100vh;
+    width: 80vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+<<<<<<< HEAD
+.container404 a img{
+=======
+a img{
+>>>>>>> prototipo
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+}
+<<<<<<< HEAD
+.container404 a{
+=======
+a{
+>>>>>>> prototipo
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 2px var(--negro);
+}
+
+<<<<<<< HEAD
+.container404 a:hover{
+    box-shadow: 0px 0px 20px 4px var(--fucsia);
+}
+.container404 h1,h2{
+    padding-bottom: 2rem;
+}
+.container404 h3{
+    padding-top: 2rem;
+}
+
+.container404 h1{
+    color: var(--fucsia);
+}
+.container404 h3{
+    font-size: 1rem;
+=======
+a:hover{
+    box-shadow: 0px 0px 20px 4px var(--fucsia);
+}
+ h1,h2{
+    padding-bottom: 2rem;
+}
+
+h1{
+    color: var(--turqueza);
+    
+}
+h3{
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+
+body{
+    background: linear-gradient(0deg, rgba(28, 230, 230, 0.598) 0%, var(--fucsia) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+>>>>>>> prototipo
+}

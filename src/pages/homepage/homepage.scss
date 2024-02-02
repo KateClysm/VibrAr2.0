@@ -1,0 +1,61 @@
+.homepage{
+    background-color: var(--white-color);
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+
+    .container{
+        border: 1px solid red;
+        width: 80vw;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        
+
+        .slide-show{
+            display: flex;
+            justify-content: center;
+            width: 70vw;
+            position: relative;
+            height: fit-content;
+            
+
+
+            button{
+                padding: 0.3rem;
+                border-radius: 50%;
+                border: none;
+                background-color: var(--black-color);
+                cursor: pointer;
+                text-align: center;
+                color: var(--white-color);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover{
+                    background-color: var(--fucsia-color);
+                }
+            }
+
+            .prevButton{
+                position: absolute;
+                top: 50%;
+                left: 1rem;
+                transform: translateY(-50%);
+            }
+            .nextButton{
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%);
+            }
+
+            .slide{
+                width: 100%;
+                height: fit-content;
+                border-radius: 1rem;
+            }
+        }
+    }
+}

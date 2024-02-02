@@ -1,0 +1,51 @@
+:root{
+    --fucsia-color: #d316b3;
+    --turquoise-color: #0095f6;
+    --white-color: #ffffff;
+    --black-color: #080808;
+}
+
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--black-color);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+    
+a { text-decoration: none; }
+    
+.footer-icon { font-size: 1.4rem; }
+p{ font-size: 1.3rem; }
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+h2 { font-size: 3rem; font-weight: lighter;}
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+button, a { font-size: 1.5rem; }
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+html {font-size: var(--font-size-small-mobile);}
+@media (min-width: 425px) { html {font-size: var(--font-size-mobile);} }
+@media (min-width: 600px) { html {font-size: var(--font-size-tablet);} }
+@media (min-width: 1240px) { html {font-size: var(--font-size-laptop);} }
+@media (min-width: 1400px) { html {font-size: var(--font-size-desktop);} }
+@media (min-width: 1900px) { html {font-size: var(--font-size-large-desktop);} }
+@media (min-width: 2500px) { html {font-size: var(--font-size-huge-desktop);} }

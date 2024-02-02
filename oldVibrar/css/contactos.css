@@ -1,0 +1,104 @@
+.containerContenido{
+    background-color: var(--blanco);
+    height: 100%;
+    
+}
+
+.pantalla{
+    margin-top: 0;
+}
+
+.logo-en-pagina{
+   padding-top: 3rem;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    min-width: 250px;
+}
+
+.centrar-texto{
+    padding-top: 20px;
+    width: 900px;
+}
+
+.containerTexto{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contacto-texto{
+    padding: 0 10% 0 10%;
+}
+
+.Formulario{
+    width:900px;
+    height: 100%;
+    padding: 3rem 0px;
+
+}
+
+.control{
+    width: 297px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px gray;
+    font-family: 'Roboto';
+    font-size: 18px;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.control1{
+    width: 445px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px gray;
+    font-family: 'Roboto';
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+.control2{
+    width: 100%;
+    background-color: lightgray;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    height: 110px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px gray;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.Botons{
+    width: 100%;
+    background-color: grey;
+    border: none;
+    padding: 12px;
+    
+}
+
+.logoContacto{
+    height: 100px;
+}
+
+.boton-enviar{
+    cursor: pointer;
+}
+.boton-enviar:hover{
+    background-color: var(--turqueza);
+}
+
+@media screen and (min-width: 320px) and (max-width: 1064px){
+    .Formulario{width: 80%; margin: 0%; font-size: 15px;}
+    .containerTexto, .centrar-texto, .contacto-texto{width: 100%; font-size: medium; }
+    .containerContenido {display: block;}
+    .control, .control1 {width: 100%;}
+}
+

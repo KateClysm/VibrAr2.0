@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibrAr - Eventos</title>
+
+    <!--ÍCONO DE LA PÁGINA-->
+    <link rel="icon" type="image/png" href="resources/miniVibrarBlanco.png">
+
+    <!--CSS GENERAL-->
+    <link rel="stylesheet" href="css/general.css">
+
+    <!--CSS PARTICULAR-->
+    <link rel="stylesheet" href="css/eventos.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tauri&display=swap" rel="stylesheet">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--HANDLEBARS-->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+</head>
+<body>
+    <div class="container-nav">
+        <div class="logo">
+            <img src="resources/vibrarBlanco.png" alt="Logo de VibrAr">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/eventos.html">Eventos</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contactos.html">Contacto</a></li>
+            </ul>
+        </nav>   
+
+        <a onclick="abrirNavegador()" class="menu" href="#">
+            <i class="fa-solid fa-bars icono-menu"></i>
+        </a>
+
+        <div id="mobile-menu" class="overlay">
+            <a onclick="cerrarNavegador()" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="/index.html">Inicio</a>
+                <a href="/eventos.html">Eventos</a>
+                <a href="/nosotros.html">Nosotros</a>
+                <a href="/contactos.html">Contacto</a> 
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-evento" id="container-evento"></div>
+
+
+
+
+
+    <footer class="centradoAbsoluto">
+        <div class="container-blanco centradoAbsoluto">
+            <div class="container-section footer">
+
+                <div class="redes centradoAbsoluto">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram icons-footer"> <p>VibrAr</p> </i> 
+                    </a>
+        
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook icons-footer"> <p>VibrAr Oficial</p> </i> 
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-square-twitter icons-footer"> <p>VibrArg</p> </i> 
+                    </a>  
+                </div>
+
+                <div class="derechos centradoAbsoluto">    
+                    <a href="https://github.com/KateClysm/VibrAr" target="_blank">© Derechos reservados por
+                        <i class="fa-brands fa-github icons-footer"> <p>VibrAr Proyect</p> </i> 
+                    </a>     
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--nav script-->
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/eventos.js"></script>
+</body>
+</html>

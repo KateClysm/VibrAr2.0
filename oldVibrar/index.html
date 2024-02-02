@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibrAr</title>
+
+    <!--ÍCONO DE LA PÁGINA-->
+    <link rel="icon" type="image/png" href="resources/miniVibrarBlanco.png">
+
+    <!--CSS GENERAL-->
+    <link rel="stylesheet" href="css/general.css">
+
+    <!--CSS PARTICULAR-->
+    <link rel="stylesheet" href="css/inicio.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tauri&display=swap" rel="stylesheet">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--Barra de navegación-->
+    <div class="container-nav">
+        <div class="logo">
+            <img src="resources/vibrarBlanco.png" alt="Logo de VibrAr">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/eventos.html">Eventos</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <a onclick="abrirNavegador()" class="menu" href="#">
+            <i class="fa-solid fa-bars icono-menu"></i>
+        </a>
+
+        <div id="mobile-menu" class="overlay">
+            <a onclick="cerrarNavegador()" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="/index.html">Inicio</a>
+                <a href="/eventos.html">Eventos</a>
+                <a href="/nosotros.html">Nosotros</a>
+                <a href="/contactos.html">Contacto</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-padre centradoAbsoluto">
+        <div class="container-blanco centradoAbsoluto">
+            <div class="fondo container-section">
+
+                <!--SLIDER BANER-->
+                <div class="container-slider" id="slider">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="inner">
+                                <div class="slide slide_1"> <a href="taylor.html"></a>
+                                </div>
+                                <div class="slide slide_2"> <a href="theweeknd.html"></a>
+                                </div>
+                                <div class="slide slide_3"> <a href="redhot.html"></a>
+                                </div>
+                                <div class="slide slide_4"> <a href="maneskin.html"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                    <div id="bullets">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                </div>
+
+                <!--FIN DEL SLIDER-->
+             
+                <!--MODAL -->
+
+                <div class="modal-container">
+                    <div class="modal modal-cerrar">
+            
+                        <div class="containergrid">
+                            <h3>SUSCRIBITE A NUESTRO DIARIO DE NOTICIAS</h3>
+                            
+                    <!--FORMULAIRO-->
+                            <div class="formulario">      
+
+                             <h3 class="titulos2">FORMULARIO <span id="eleccion"></span></h3>
+
+                            <input id=valor1 placeholder="Ingrese su nombre">
+                            <input id=valor2 placeholder="Ingrese su mail">
+
+                            <button>Enviar</button>
+
+                        </div>  
+
+
+                    <!--FIN DE FORMULARIO-->
+
+                            <div class="containerCajas">                    
+                                <div class="noticiasUno">
+                                    <img src="./resources/the wkend3.jpg" alt="WKEND" />
+                                    <p> The Weeknd en Argentina: cuándo y dónde será el recital y cómo comprar las entradas</p>
+                                </div>
+            
+                                <div class="noticiasUno">
+                                    <img src="./resources/taylor3.jpg" alt="Taylor">
+                                    <p>Taylor Swift en Argentina: ya hay fans acampando en el Monumental, a cinco meses del show</p>
+                                </div>
+            
+                                <div class="noticiasUno">
+                                    <img src="./resources/dukiconcierto.jpg" alt="noticias">
+                                    <p> Show de Duki en River: cuándo es, cuánto salen las entradas y cómo comprar
+                                    </p>
+                                </div>
+
+                            
+            
+                                <div class="noticiasUno">
+                                    <img src="./resources/redhot3.jpg" alt="noticias">
+                                    <p>Red Hot Chili Peppers agotó su segundo show en la Argentina en tiempo récord
+                                    </p>
+                                </div>
+
+                                <div class="noticiasUno">
+                                    <img src="./resources/evanescence3.jpg" alt="WKEND" />
+                                    <p> Evanescence vuelve a la Argentina tras seis años de ausencia: fechas y entradas</p>
+                                </div>
+            
+                                <div class="noticiasUno">
+                                    <img src="./resources/maneskin3.png" alt="Taylor">
+                                    <p>Måneskin vuelve a Argentina: cuándo y dónde se presentarán</p>
+                                </div>
+    
+    
+                            </div>
+
+                            </div>
+
+                       
+                        
+            
+                        <p class="cerrar">x</p>
+                    </div>
+                </div>
+                <!--FIN MODAL-->
+
+             
+
+                <!--CAJITAS DE INFO -->
+                <div class="container-info">
+                    <div class="info">
+                        
+                        <div class="cartelera">
+                            <h2>SIGUENOS</h2>
+                            <a href="#"><img src="./resources/instalogo6.jpg" alt="instagram"></a>
+                        </div>
+    
+
+                        <div class="noticias">
+                            <h2>NOTICIAS</h2>
+                            <img src="./resources/breakingnews4.jpg" alt="noticias">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <footer class="centradoAbsoluto">
+                    <div class="container-blanco centradoAbsoluto">
+                        <div class="container-section">
+
+                            <div class="redes centradoAbsoluto">
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram icons-footer">
+                                        <p>VibrAr</p>
+                                    </i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa-brands fa-square-facebook icons-footer">
+                                        <p>VibrAr Oficial</p>
+                                    </i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="fa-brands fa-square-twitter icons-footer">
+                                        <p>VibrArg</p>
+                                    </i>
+                                </a>
+                            </div>
+
+                            <div class="derechos centradoAbsoluto">
+                                <a href="https://github.com/KateClysm/VibrAr" target="_blank">© Derechos reservados por
+                                    <i class="fa-brands fa-github icons-footer">
+                                        <p>VibrAr Proyect</p>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <!--nav script-->
+                <script src="/scripts/nav.js"></script>
+                <script src="./scripts/Indexmodal.js"></script>
+</body>
+
+</html>

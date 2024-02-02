@@ -1,0 +1,144 @@
+/*CONTENEDOR DE LAS INTEGRANTES*/
+.gallery{
+    width: 82vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-wrap: wrap;
+    justify-items:center;
+    padding-top: 3rem;
+    gap: 2rem 0;
+}
+
+/*TARJETA DE LAS INTEGRANTES*/
+.card{
+    position: relative;
+    width: 500px;
+    height: 230px;
+    padding: 0rem 1rem 2rem 1rem;
+    background-color: var(--blanco);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .3);
+    transition: .2s ease;
+}
+
+/*NOMBRE DE LA INTEGRANTE*/
+.gallery .card h2{
+    z-index: 99;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: aliceblue;
+    transition: .2s ease;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.801);
+}
+
+/*GITHUB Y LINKEDIN*/
+.links{
+    z-index: 99;
+    display: none;
+    right: 130px;
+    width: 300px;
+    opacity: 0;
+    transition: .2s ease;
+    padding: 1rem;
+   
+}
+.card:hover > .links{
+    position: absolute;
+    bottom: -5px;
+    text-align: center;
+    display: block;
+    opacity: 1;
+    right: -20px;
+}
+
+/*ESTILO DE LOS ANCHOR Y ICONS*/
+a{
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 1rem;
+}
+i{padding: 0.3rem;}
+
+/*FOTO DE LA INTEGRANTE*/
+.foto img{
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+/*CONTENEDOR DE LA FOTO DE LA INTEGRANTE*/
+.foto{
+    z-index: 100;
+    height: 200px;
+    filter: grayscale(100%);
+}
+
+/*lOGO DE LA PÁGINA*/
+.logo-en-pagina img{
+    padding: 2.5rem;
+     width: 250px;
+ }
+
+ /*TÍTULO Y TEXTO SOBRE LA SECCIÓN*/
+ .container-section h2, .container-section h4{
+     padding-bottom: 2rem;
+ }
+
+ /*ESPACIO PARA EL SLIDER SI ES QUE SE HACE*/
+ .slider{
+     height: 500px;
+     width: 100%;
+     background-color: var(--fucsia);
+ }
+
+
+
+.card{cursor: pointer;}
+
+.card:hover{
+    height: 100%;
+    transform: scale(100%);
+    transition: .3s ease;
+}
+
+/*SOBRE LA INTEGRANTE*/
+.texto{
+    padding: 1rem 0;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    display: none;
+}
+.card:hover > .texto{ /*APARICIÓN DEL TEXTO AL HACER HOVER SOBRE LA TARJETA*/
+    display: block;
+}
+
+/*MOVIMIENTO DEL NOMBRE DE LA INTEGRANTE AL HACER HOVER*/
+.card:hover > h2 {
+    top: 40px;
+    right: 40px;
+}
+
+/*SE QUITA EL FILTRO AL PASAR POR LA TARJETA*/
+.card:hover > .foto{
+    filter: grayscale(0);
+}
+
+.integrantes{
+    padding: 3rem; 
+    font-size: 2rem;}
+
+@media screen and (min-width: 320px) and (max-width: 1064px){
+    .container-section{width: 80%; font-size: medium; display: block;}
+    .integrantes{font-size: 1.5rem; margin: auto;}
+    .gallery{display: inline-block;}
+    .card{width: 80%; margin: 10px 0px 30px 8px;}
+    .footer {text-align: center;}
+}
+
+.speach{
+    padding: 0 2rem;
+}

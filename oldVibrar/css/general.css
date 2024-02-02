@@ -1,0 +1,173 @@
+/*VARIABLES DE USO GENERAL.*/
+:root{
+    --fucsia: #d316b3;
+    --turqueza: #0095f6;
+    --blanco: #ffffff;
+    --negro: #080808;
+}
+
+/*APLICA A TODA LA PÁGINA*/
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--negro);
+    height:100%; }
+
+
+.centradoAbsoluto{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.container-blanco{
+    width: 90vw;
+    background-color: var(--blanco);
+    display: flex;
+    justify-self: center;
+    align-items: center;}
+
+.centrarTexto{text-align: center;}
+.container-section{
+    width: 82vw; 
+    /* background-color: var(--blanco); */
+    padding-bottom: 1rem;
+}
+
+/*---------------BARRA DE NAVEGACIÓN--------------------*/
+.container-nav{
+    background-color: var(--negro);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    padding: 5px 10%;}
+    
+.container-nav .logo{margin-right: auto; /*Separa al logo de los items*/} 
+
+.container-nav .logo img{height: 45px;} 
+
+.container-nav .nav-links li{
+    display: inline-block;
+    padding: 20px 30px;
+    cursor: pointer;}
+
+.nav-links li:hover{background-color: var(--fucsia); border-radius: 2px;}
+
+.container-nav .nav-links a{font-size: 1.2rem; color: var(--blanco);  cursor: pointer; }
+
+.menu {display:none;} /*contenedor del ícono de menú*/
+
+.container-nav .menu .icono-menu{
+    font-size: 1.5rem;
+    color: var(--blanco);
+    border: none;
+    cursor: pointer;}
+
+/*Barra de navegación que se encuentra escondida*/
+.container-nav .overlay {
+    height: 100%;
+    width: 0; /*con width 0 la escondemos*/
+    position: fixed; /*hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll.*/
+    z-index: 1;
+    /*Las propiedades top y bottom especifican el desplazamiento vertical desde su posición original; las propiedades left y right especifican su desplazamiento horizontal.*/
+    left: 0;
+    top: 0;
+    background-color: var(--fucsia);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;}
+
+.container-nav .overlay .overlay-content{ /*nav oculto*/
+    display: flex;
+    height: 100%;
+    flex-direction: column; /*Flex-direction determina la dirección en que se ordenarán los elementos en el espacio. */
+    align-items: center;
+    justify-content: center;    }
+
+.container-nav .overlay a{
+    padding: 15px;
+    font-size: 1rem;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 1.2rem;
+    color: var(--blanco);}
+
+.container-nav .overlay .close{
+    position: absolute; /*hace que un elemento se coloque respecto a su contenedor posicionado mas cercano*/
+    top: -15px;
+    right: 10px;
+    font-size: 50px;}
+
+
+    
+/*FOOTER - ESTILOS CONSTANTES*/
+.redes a i, .derechos a i{text-align: center;}
+.redes a, .derechos a{
+    color: var(--negro);
+    cursor: pointer;}
+.footer{padding: 1rem 0;}
+.redes a i p, .derechos a i p{display: inline-flex;}
+.redes a:hover, .derechos a:hover{color: var(--turqueza); transition: 0.3s;}
+.redes a, .derechos a{font-size: 0.7rem;}
+.redes a, .derechos a{
+    color: var(--negro);
+    padding: 0.5rem 0.5rem;}
+
+
+
+/*------------MEDIA QUERIES------------*/   
+
+@media screen and (max-width: 768px) {
+   /*BARRA DE NAVEGACIÓN*/
+   .close{display: inherit;}
+
+   .nav-links {display: none;}
+
+   .menu {display: inherit;}
+
+   .container-nav .logo img{height: 30px;}
+   .container-nav .overlay {z-index: 50;}
+}
+
+
+@media screen and (min-width: 375px){
+    /*FOOTER*/
+    .redes a, .derechos a{font-size: 0.7rem;}
+}
+
+@media screen and (min-width: 425px){
+    /*FOOTER*/
+    .redes a, .derechos a{font-size: 0.8rem;}
+}
+
+@media screen and (min-width: 768px){
+     /*FOOTER*/
+    .redes a, .derechos a{font-size: 1rem;}
+    .footer{padding: 2rem 0;}
+
+    /*NAV*/    
+    .container-nav .overlay a{padding: 1.2rem 0; font-size: 1.2rem;}
+    .container-nav .overlay .close{right:60px; font-size: 6rem;}
+}
+
+@media screen and (min-width: 1024px) {
+    /*FOOTER*/
+    .redes a, .derechos a{font-size:1.2rem;}
+    /*NAV*/
+    .container-nav{height: 80px;}
+}
+
+@media screen and (min-width: 2560px) {
+    /*FOOTER*/
+    .redes a, .derechos a{font-size:1.5rem;}
+     /*NAV*/
+     .container-nav{height: 150px;}
+     .container-nav .logo img {height: 90px;}
+     .container-nav .nav-links a {font-size: 2.5rem;}
+     .container-nav .nav-links li{padding: 20px 80px;}
+}
