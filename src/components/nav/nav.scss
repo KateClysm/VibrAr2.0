@@ -36,7 +36,8 @@ header{
                 font-size: 1.1rem;
                 letter-spacing: 0.1rem;
                 color: var(--white-color);
-                background-color: #800080fb;
+                background: rgb(251,111,96);
+                background: linear-gradient(140deg, rgba(251,111,96,1) 0%, rgba(251,54,108,1) 61%);
                 padding: 0.6rem 1rem;
                 border-radius: 32px;
                 text-align: center;

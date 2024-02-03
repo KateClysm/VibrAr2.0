@@ -1,7 +1,7 @@
 :root{
-    --fucsia-color: #d316b3;
+    --fucsia-color: rgba(251,54,108,1);
     --turquoise-color: #0095f6;
-    --white-color: #ffffff;
+    --white-color: #FFFFFF;
     --black-color: #080808;
 }
 

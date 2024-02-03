@@ -1,7 +1,8 @@
 import './App.css'
 import Nav from './components/nav/Nav';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import HomePage from './pages/homepage/homepage';
+import HomePage from './pages/homepage/Homepage.jsx';
+import Footer from './components/footer/Footer.jsx';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
       <div className='window'> 
         <Nav />
         <Outlet />
-        {/* <Footer /> */}
+        <Footer/>
       </div>
     );
   };
