@@ -2,14 +2,12 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    // background-color: var(--white-color);
     width: 100%;
-    padding: 0 5%;
+    padding: 1rem 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 100;
-
     .wave-nav{
         position: absolute;
         top: 80%;
@@ -28,64 +26,42 @@ header{
             height: 100%;
             top: 0;
             left: 0;
-            // background-color: var(--white-color);
             z-index: -1;
         }
 
         nav{
+            display: flex;
+            column-gap: 4rem;
             a{
-                font-size: 1rem;
-                font-weight: bold;
+                font-size: 1.1rem;
                 letter-spacing: 0.1rem;
                 color: var(--white-color);
-                margin-left: 3.5rem;
+                background-color: #800080fb;
+                padding: 0.6rem 1rem;
+                border-radius: 32px;
+                text-align: center;
                 
+                border-radius: 32px;
+                box-shadow:  5px 5px 16px #56055680,
+                -5px -5px 16px #44044480;
+                &:hover{
+                    background-color: rgba(179, 4, 179, 0.725);
+                } 
             }
         }
 
-        .home{
-            font-size: 2.3rem;
-            color: var(--white-color);
-            display: flex;
-            align-items: center;
-            padding: 0.1rem ;
-            margin: 0.7rem;
-            position: relative;
-            transition: .3s ease;
-            border-radius: 50%;
-
-            &:hover{
-                outline: 1px solid var(--black-color);
-                animation: outline-animation 0.6s ease forwards;
-            } 
-
-            @keyframes outline-animation {
-                0% {
-                    padding: 0.1rem ;
-                    margin: 0.7rem;
-                }
-                50% {
-                    padding: 0.5rem ;
-                    margin: 0.3rem;
-                }
-                100% {
-                    padding: 0.3rem ;
-                    margin: 0.5rem;
-                }
-            }
-        }
     }
 
     .icons{
         position: absolute;
         right: 5%;
         font-size: 2.5rem;
-        color: var(--black-color);
+        color: var(--white-color);
         cursor: pointer;
         display: none;
         .bars, .close{
             path{
-                color: var(--black-color);
+                color: var(--white-color);
             }
         }
     }
@@ -94,44 +70,29 @@ header{
         display: none;
     }
 
-    .left-nav nav a, .modes button{
-
-        position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: -0.2rem;
-            left: 0;
-            width: 0;
-            
-            height: 2px; 
-            background-color: var(--black-color); 
-            transition: width 0.3s ease-in-out; 
-        }
-
-        &:hover::after {
-            width: 100%;
-        }
-    }
+   
 }
 
 
 @media (max-width: 768px){
     header{
+        
         .icons{
             display: inline-flex;
         }
         .left-nav{
+            padding: 0.5rem;
+           
             nav{
                 position: absolute;
                 top: 100%;
                 left: 0;
                 width: 100%;
                 height: 0;
-                background-color: var(--white-color);
+                background-color: #007ed16a;
                 transition: .3s ease;
                 overflow: hidden;
+                
 
                 display: flex;
                 flex-direction: column;
@@ -147,22 +108,17 @@ header{
                     transition: .3s ease;
                     opacity: 0;
 
+                    
+
                     &::after {
                         bottom: -0.5rem;
+
                     }
             
                 }
             }
         }
 
-
-        // .modes{
-        //     position: absolute;
-        //     left: calc(2.3rem + 10%);
-        //     button{
-        //         font-size: 1.3rem;
-        //     }
-        // }
 
         #close-icon{
             display: none;
@@ -176,6 +132,10 @@ header{
 
         #check:checked~.left-nav nav{
             height: 100vh;
+        }
+        #check:checked~.left-nav::before{
+            background-color:#007ed16a;
+            transition: 0.5s;
         }
         #check:checked~.left-nav nav a{
             transform: translateY(0);

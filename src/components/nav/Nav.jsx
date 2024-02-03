@@ -1,31 +1,58 @@
-
 import React, { useEffect, useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import "./nav.scss";
 import { HiBars3 } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
-import { RiHomeHeartLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
-import './nav.scss';
 
 const Nav = () => {
+  const navigate = useNavigate();
 
+  // Arreglo de objetos que contiene los nombres y áreas de navegación
   const navLinks = [
-    { name: "INICIO", area: "#inicio" },
+    { name: "INICIO", area: "/" },
     { name: "EVENTOS", area: "#eventos" },
     { name: "NOSOTROS", area: "#nosotros" },
     { name: "CONTACTO", area: "#contacto" }
   ];
 
-  const handleNavLinkClick = (area, existingOnClick) => {
-    if (existingOnClick) {
-      existingOnClick(); 
+  // Maneja el scroll o redireccionamiento a la sección indicada
+  const handleScrollOrRedirection = (area) => {
+    const currentPath = window.location.pathname;
+
+    if (area === "/" && currentPath === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (area === "/" && currentPath !== "/") {
+      navigate("/");
+    } else if (area.startsWith("/") && currentPath === "/") {
+      const element = document.getElementById(area.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(area.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 500); // Espera 500ms para asegurarse de que la redirección se complete antes del desplazamiento
     }
-    handleScrollOrRedirection(area);
   };
 
-  const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false); 
+  // Maneja el click en los enlaces de navegación
+  const handleNavLinkClick = (area, existingOnClick) => {
+    if (existingOnClick) {
+      existingOnClick(); // Llama a la función onClick existente si hay alguna
+    }
+    handleScrollOrRedirection(area); // Llama a la función para redirección o desplazamiento
+  };
 
+  // Obtiene el scrollY y detecta cuando hay cambios
+  const { scrollY } = useScroll();
+  const [hidden, setHidden] = useState(false); // Controla el ocultamiento del nav al hacer scroll
+
+  // Modifica el estado de 'hidden' en base al scroll
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
     if (latest > previous) {
@@ -35,12 +62,14 @@ const Nav = () => {
     }
   });
 
+  // Controla si el menú está abierto o cerrado
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  // Maneja el cierre del menú
   const handleCloseMenu = () => {
     setIsMenuOpen(false);
   };
 
+  // Evita el desbordamiento cuando se abre el menú en dispositivos móviles
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -48,6 +77,7 @@ const Nav = () => {
       document.body.style.overflow = "visible";
     }
 
+    // Limpia el efecto cuando el componente se desmonta
     return () => {
       document.body.style.overflow = "visible";
     };
@@ -76,15 +106,14 @@ const Nav = () => {
 
       <div className="left-nav">
         <a
-          href="/mariamonchot/"
+          href="/"
           className="home"
           onClick={(event) => {
             event.preventDefault();
             handleCloseMenu();
-            handleNavLinkClick("/mariamonchot/");
+            handleNavLinkClick("/");
           }}
         >
-          <RiHomeHeartLine className="home-icon" />
         </a>
 
         <nav>
@@ -92,7 +121,7 @@ const Nav = () => {
             <a
               key={index}
               href={link.area}
-              style={{ "--i": index } }
+              style={{ "--i": index }}
               onClick={(event) => {
                 event.preventDefault();
                 handleCloseMenu();

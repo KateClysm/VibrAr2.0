@@ -112,7 +112,7 @@ function HomePage() {
   }
 
   return (
-    <section className="homepage">
+    <section className="homepage" id="inicio">
       <div className="container-slider">
         <div className="slide-show">
           {artistsList.length > 0 && artistsList[index] && (
