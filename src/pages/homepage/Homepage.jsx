@@ -2,7 +2,10 @@ import "./homepage.scss";
 import React, { useState, useEffect } from "react";
 import Slider from "../../components/slider/Slider";
 import RightBlock from "../../components/right_block/RightBlock";
-
+import Card from "../../components/card/Card";
+import concerts from "../../../public/fotografias/concert1.jpg"
+import gossip from "../../../public/fotografias/gossip.jpg"
+import LongPill from "../../components/long_pill/LongPill";
 function HomePage() {
   const [artistsList, setArtistsList] = useState([]);
 
@@ -111,21 +114,19 @@ function HomePage() {
 
       <Slider images={artistsList} />
 
+      
       <div className="container-info">
-            <div className="oficiales">
-              <h4>PRÓXIMOS RECITALES</h4>
-              <img src="/fotografias/concert1.jpg" alt="" />
-            </div>
-            <div className="gossip">
-              <h4>NOTICIAS DE ARTISTAS</h4>
-              <img src="/fotografias/gossip.jpg" alt="" />
-            </div>
+        <Card image={concerts} title={"PRÓXIMOS RECITALES"} direction={"left"}/>
+        <Card image={gossip} title={"NOTICIAS DE ARTISTAS"} direction={"right"}/>
       </div>
 
-      <div className="reciente">
+      <LongPill title={"RECIENTE"} text={"Se confirma el concierto de Lana del Rey para Argentina, Brazil y Chile, próximamente se anunciará el estadio y fechas."} glow={true}/>
+
+
+      {/* <div className="reciente">
         <h3>RECIENTE</h3>
         <p>Se confirma el concierto de Lana del Rey para Argentina, Brazil y Chile, próximamente se anunciará el estadio y fechas.</p>
-       </div>
+       </div> */}
 
 
       <div className="container-fotografias">

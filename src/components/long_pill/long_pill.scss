@@ -1,0 +1,12 @@
+.long-pill{
+    width: 70vw;
+    box-shadow:  5px 5px 16px #56055680,
+    -5px -5px 16px #44044480;
+    background: var(--white-color);
+    border-radius: 32px;
+    padding: 2rem;
+
+    h3{
+        padding-bottom: 1rem;
+    }
+}
