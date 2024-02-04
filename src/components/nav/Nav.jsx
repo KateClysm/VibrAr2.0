@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 const Nav = () => {
   const navigate = useNavigate();
 
-  // Arreglo de objetos que contiene los nombres y áreas de navegación
   const navLinks = [
     { name: "INICIO", area: "/" },
     { name: "EVENTOS", area: "#eventos" },
@@ -49,18 +48,18 @@ const Nav = () => {
   };
 
   // Obtiene el scrollY y detecta cuando hay cambios
-  const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false); // Controla el ocultamiento del nav al hacer scroll
+  // const { scrollY } = useScroll();
+  // const [hidden, setHidden] = useState(false); // Controla el ocultamiento del nav al hacer scroll
 
   // Modifica el estado de 'hidden' en base al scroll
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
-    if (latest > previous) {
-      setHidden(true);
-    } else {
-      setHidden(false);
-    }
-  });
+  // useMotionValueEvent(scrollY, "change", (latest) => {
+  //   const previous = scrollY.getPrevious();
+  //   if (latest > previous) {
+  //     setHidden(true);
+  //   } else {
+  //     setHidden(false);
+  //   }
+  // });
 
   // Controla si el menú está abierto o cerrado
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -89,7 +88,6 @@ const Nav = () => {
         visible: { y: 0 },
         hidden: { y: "-200%" },
       }}
-      animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.5, ease: "easeInOut" }}
     >
 

@@ -1,12 +1,47 @@
+.colorfull{
+    background-image: radial-gradient(circle, #fb6f60, #fc6361, #fc5664, #fc4767, #fb366c);
+    color: var(--white-color);
+}
+
 .long-pill{
     width: 70vw;
     box-shadow:  5px 5px 16px #56055680,
     -5px -5px 16px #44044480;
-    background: var(--white-color);
+    background-color: var(--white-color);
     border-radius: 32px;
     padding: 2rem;
+    
+    position: relative;
 
     h3{
         padding-bottom: 1rem;
+    }
+
+    .animated::before{
+        content: "";
+        width: 104%;
+        height: 102.7%;
+        border-radius: 8px;
+        background-image: linear-gradient(
+            var(--rotate),
+            #5ddcff,
+            #3c67e3 43%,
+            #4e00c2
+        );
+        position: absolute;
+        z-index: -1;
+        top: -1.3%;
+        left: -2%;
+        animation: spin 2.5s linear infinite;
+    }
+
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+    100% {
+        --rotate: 360deg;
     }
 }

@@ -8,13 +8,6 @@ header{
     align-items: center;
     justify-content: center;
     z-index: 100;
-    .wave-nav{
-        position: absolute;
-        top: 80%;
-        width: 100%;
-        left: 0;
-        transform: rotate(-180deg);
-    }
 
     .left-nav{
         display: flex;
@@ -36,7 +29,7 @@ header{
                 font-size: 1.1rem;
                 letter-spacing: 0.1rem;
                 color: var(--white-color);
-                background: rgb(251,111,96);
+                background: var(--peach-color);
                 background: linear-gradient(140deg, rgba(251,111,96,1) 0%, rgba(251,54,108,1) 61%);
                 padding: 0.6rem 1rem;
                 border-radius: 32px;
@@ -45,8 +38,10 @@ header{
                 border-radius: 32px;
                 box-shadow:  5px 5px 16px #56055680,
                 -5px -5px 16px #44044480;
+
                 &:hover{
-                    background-color: rgba(179, 4, 179, 0.725);
+                    box-shadow:  4px 4px 10px #2b012b84,
+                        -4px -4px 10px #26012680;
                 } 
             }
         }
@@ -142,24 +137,6 @@ header{
             transform: translateY(0);
             opacity: 1;
             transition-delay: calc(.15s * var(--i));
-        }
-    }
-}
-
-
-
-@media (min-width: 1000px){
-    header{
-        .wave-nav{
-            top: 40%;
-        }
-    }
-}
-
-@media (min-width: 1200px){
-    header{
-        .wave-nav{
-            top: 35%;
         }
     }
 }

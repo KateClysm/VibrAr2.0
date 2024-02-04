@@ -3,13 +3,13 @@ import React, { useState, useEffect } from "react";
 import Slider from "../../components/slider/Slider";
 import RightBlock from "../../components/right_block/RightBlock";
 import Card from "../../components/card/Card";
-import concerts from "../../../public/fotografias/concert1.jpg"
-import gossip from "../../../public/fotografias/gossip.jpg"
+import concerts from "../../../public/fotografias/concert1.jpg";
+import gossip from "../../../public/fotografias/gossip.jpg";
 import LongPill from "../../components/long_pill/LongPill";
 function HomePage() {
   const [artistsList, setArtistsList] = useState([]);
 
-    useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch("/src/assets/artists.json");
@@ -28,127 +28,127 @@ function HomePage() {
   const fotografias = [
     {
       nombre: "concert1",
-      clase: "wide"
+      clase: "wide",
     },
     {
       nombre: "concert2",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert3",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert4",
-      clase: "tall"
+      clase: "tall",
     },
     {
       nombre: "concert5",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert6",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert7",
-      clase: "wide"
+      clase: "wide",
     },
     {
       nombre: "concert8",
-      clase: "tall"
+      clase: "tall",
     },
     {
       nombre: "concert9",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert10",
-      clase: "wide"
+      clase: "wide",
     },
     {
       nombre: "concert11",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert12",
-      clase: "wide"
+      clase: "wide",
     },
     {
       nombre: "concert13",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert14",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert15",
-      clase: "tall"
+      clase: "tall",
     },
     {
       nombre: "concert16",
-      clase: "wide"
+      clase: "wide",
     },
     {
       nombre: "concert17",
-      clase: "wide"
+      clase: "wide",
     },
     {
       nombre: "concert18",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert19",
-      clase: "normal"
+      clase: "normal",
     },
     {
       nombre: "concert20",
-      clase: "wide"
-    }
-    
+      clase: "wide",
+    },
   ];
 
   return (
     <section className="homepage" id="inicio">
-
       <Slider images={artistsList} />
 
-      
       <div className="container-info">
-        <Card image={concerts} title={"PRÓXIMOS RECITALES"} direction={"left"}/>
-        <Card image={gossip} title={"NOTICIAS DE ARTISTAS"} direction={"right"}/>
+        <Card
+          image={concerts}
+          title={"PRÓXIMOS RECITALES"}
+          direction={"left"}
+        />
+        <Card
+          image={gossip}
+          title={"NOTICIAS DE ARTISTAS"}
+          direction={"right"}
+        />
       </div>
 
-      <LongPill title={"RECIENTE"} text={"Se confirma el concierto de Lana del Rey para Argentina, Brazil y Chile, próximamente se anunciará el estadio y fechas."} glow={true}/>
+      <LongPill
+        title={"RECIENTE"}
+        text={
+          "Se confirma el concierto de Lana del Rey para Argentina, Brazil y Chile, próximamente se anunciará el estadio y fechas."
+        }
+        color={true}
+      />
 
+      <LongPill
+        title={"NUESTRO GRANITO DE ARENA"}
+        text={
+          "Este es el fruto del esfuerzo de nuestro staff, te compartimos los momentos más felices que pudimos capturar gracias a nuestros fotógrafos voluntuarios"
+        }
+      />
 
-      {/* <div className="reciente">
-        <h3>RECIENTE</h3>
-        <p>Se confirma el concierto de Lana del Rey para Argentina, Brazil y Chile, próximamente se anunciará el estadio y fechas.</p>
-       </div> */}
-
-
-      <div className="container-fotografias">
-       <div className="text">
-       <h3>NUESTRO GRANITO DE ARENA</h3>
-        <p>Este es el fruto del esfuerzo de nuestro staff, te compartimos los momentos más felices que pudimos capturar gracias a nuestros fotógrafos voluntuarios</p>
-       </div>
-        <div className="grid-fotos">
-          
+      <div className="grid-fotos">
         {fotografias.map((foto, index) => (
           <div key={index} className={`${foto.clase} div-foto`}>
-            <img src={`/fotografias/${foto.nombre}.jpg`} alt=""  />
+            <img src={`/fotografias/${foto.nombre}.jpg`} alt="" />
           </div>
         ))}
-
-        </div>
-
       </div>
 
-      <RightBlock/>
-
-      
+      <RightBlock />
     </section>
   );
 }
