@@ -1,0 +1,20 @@
+.nosotros{
+    width: 70vw;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-bottom: 4rem;
+
+    .nosotros-img{
+        width: 100%;
+        height: auto;
+        border-radius: 32px;
+    }
+
+    .logo{
+        width: 30%;
+        height: auto;
+        align-self: center;
+    }
+}

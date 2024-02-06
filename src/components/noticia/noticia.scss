@@ -1,0 +1,22 @@
+.noticia{
+    background-color: var(--white-color);
+    border-radius: 32px;
+    display: flex;
+    outline: 2px solid var(--white-color);
+    
+
+    img{
+        width: 30%;
+        height: auto;
+        border-radius: 32px 0px 0px 32px;
+    }
+
+    .info{
+        padding: 2rem;
+
+        h4{
+            font-weight: bold;
+            padding-bottom: 1rem;
+        }
+    }
+}

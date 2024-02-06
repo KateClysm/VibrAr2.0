@@ -4,6 +4,8 @@ import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import HomePage from './pages/homepage/Homepage.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Eventos from './pages/eventos/Eventos.jsx';
+import Nosotros from './pages/nosotros/Nosotros.jsx';
+import Noticias from './pages/noticias/Noticias.jsx';
 
 function App() {
 
@@ -30,6 +32,18 @@ function App() {
         {
           path: '/eventos' ,
           element: <Eventos />
+        },
+        {
+          path: '/nosotros' ,
+          element: <Nosotros />
+        },
+        {
+          path: '/noticias' ,
+          element: <Noticias />
+        },
+        {
+          path: '/artista' ,
+          element: <Noticias />
         },
       ]
     }
