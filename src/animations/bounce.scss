@@ -1,0 +1,15 @@
+@keyframes bounceX {
+
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    50% {
+      transform: translateX(-5px);
+    }
+  }
+
+.bouncingX{
+  animation: bounceX 1.5s ease-in-out infinite;
+}

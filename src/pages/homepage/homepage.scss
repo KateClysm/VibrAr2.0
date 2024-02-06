@@ -1,5 +1,5 @@
 .homepage{
-    width: 95%;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,8 +8,8 @@
     margin-top: 2rem;
     
 
-    .container-info{
-        width: 65vw;
+    .container-info, .grid-fotos{
+        width: 100%;
     }
 
     .grid-fotos > .div-foto {
@@ -20,10 +20,12 @@
 
         &:hover{
             cursor: pointer;
-            background: linear-gradient(to right, rgba(255, 35, 35, 0.479), rgba(178, 3, 178, 0.57));
             padding: 0.2rem;
             transition: 0.5s;
             border-radius: 32px;
+            img{
+                outline: 1px solid white;
+            }
         }
     }
 
@@ -37,7 +39,6 @@
 
     }
     .grid-fotos{
-        width: 70vw;
         display: grid;
         grid-gap: 10px;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -75,12 +76,13 @@
 @media (max-width: 700px){
     .homepage{
         row-gap: 2rem;
+        width: 90vw;
         
         .container-info{
-            width: 90vw;
             display: flex;
             flex-direction: column;
             row-gap: 2rem;
+            width: 100%;
         }
     }
 }

@@ -7,11 +7,7 @@ function Footer () {
     <footer>
       <div className="divisor"></div>
         <img src="/vibrarBlanco.png" alt="" />
-        <div className="text">
-            <p>Comunicamos tus sueños</p>
-            <p>Desde 2020</p>
-            <p>@VibrAr</p>
-        </div>
+        <p>comunicamos tus sueños</p>
         
     </footer>
   );

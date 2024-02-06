@@ -33,7 +33,10 @@
         color: var(--white-color);
         background: #fb6f60;
         background: linear-gradient(140deg, #fb6f60 0%, #fb366c 61%);
-        
+        outline: 1px solid white;
+        img{
+            outline: 1px solid white;
+        }
     }
 }
 
@@ -49,6 +52,31 @@
     }
 }
 
+@media (max-width: 700px) {
+    .card {
+        padding-top: 0rem;
+       
+        h4 {
+            padding: 1.5rem 0;
+        }
+
+        img{
+            height: 65%;
+        }
+    }
+
+    .left {
+        img {
+            border-radius: 150px 0px 36px 36px;
+        }
+    }
+    
+    .right {
+        img {
+            border-radius: 0px 150px 36px 36px;
+        }
+    }
+}
 
 @media (min-width: 700px) {
     .card {

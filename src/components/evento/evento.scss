@@ -1,0 +1,16 @@
+.evento{
+    width: 50%;
+    display: flex;
+    border-radius: 32px;
+    transition: 0.3s ease;
+    outline: 2px solid var(--white-color);
+    &:hover{
+        outline: 2px solid var(--fucsia-color);
+        cursor: pointer;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 32px;
+    }
+}

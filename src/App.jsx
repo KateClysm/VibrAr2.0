@@ -3,6 +3,7 @@ import Nav from './components/nav/Nav';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import HomePage from './pages/homepage/Homepage.jsx';
 import Footer from './components/footer/Footer.jsx';
+import Eventos from './pages/eventos/Eventos.jsx';
 
 function App() {
 
@@ -24,14 +25,12 @@ function App() {
         {
           path: '/',
           element: 
-            <>
-              <HomePage/>
-            </>
+            <HomePage/>
         },
-        // {
-        //   path: '/artist' ,
-        //   element: <Project />
-        // },
+        {
+          path: '/eventos' ,
+          element: <Eventos />
+        },
       ]
     }
   ]);
@@ -44,3 +43,6 @@ function App() {
 };
 
 export default App;
+
+
+

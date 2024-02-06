@@ -1,11 +1,16 @@
 import "./homepage.scss";
 import React, { useState, useEffect } from "react";
 import Slider from "../../components/slider/Slider";
-import RightBlock from "../../components/right_block/RightBlock";
 import Card from "../../components/card/Card";
 import concerts from "../../../public/fotografias/concert1.jpg";
 import gossip from "../../../public/fotografias/gossip.jpg";
 import LongPill from "../../components/long_pill/LongPill";
+import PhotoBlock from "../../components/photo_block/PhotoBlock";
+import peoplecontact from "/people.jpg";
+import attractingpeople from "/attracting.jpg";
+
+
+
 function HomePage() {
   const [artistsList, setArtistsList] = useState([]);
 
@@ -133,6 +138,8 @@ function HomePage() {
         color={true}
       />
 
+      <PhotoBlock title="ATRAEMOS BUENAS VIBRAS" text="Y manifestamos los recitales que tanto querés que sucedan"  image={attractingpeople} center={true} link={"#"} linkName={"Conoce más sobre nosotros"}/>
+
       <LongPill
         title={"NUESTRO GRANITO DE ARENA"}
         text={
@@ -148,7 +155,9 @@ function HomePage() {
         ))}
       </div>
 
-      <RightBlock />
+      <PhotoBlock title="CONTACTATE CON NOSOTROS" text="Podes encontrarnos en todas las redes sociales con un solo click!" image={peoplecontact} socials={true} side="left" center={true} id={"contacto"}/>
+
+      
     </section>
   );
 }

@@ -10,36 +10,47 @@ const Nav = () => {
 
   const navLinks = [
     { name: "INICIO", area: "/" },
-    { name: "EVENTOS", area: "#eventos" },
-    { name: "NOSOTROS", area: "#nosotros" },
+    { name: "EVENTOS", area: "/eventos" },
+    { name: "NOSOTROS", area: "/nosotros" },
+    { name: "NOTICIAS", area: "/noticias" },
     { name: "CONTACTO", area: "#contacto" }
+    
   ];
 
   // Maneja el scroll o redireccionamiento a la sección indicada
   const handleScrollOrRedirection = (area) => {
     const currentPath = window.location.pathname;
-
+  
+    //desplaza arriba si estas en inicio
     if (area === "/" && currentPath === "/") {
       window.scrollTo({ top: 0, behavior: "smooth" });
+
+      //redirije a inicio cuando no te encuentras en él
     } else if (area === "/" && currentPath !== "/") {
       navigate("/");
-    } else if (area.startsWith("/") && currentPath === "/") {
-      const element = document.getElementById(area.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      navigate("/");
+
+      //si no se está en el inicio, primero se redirije a él y luego scrollea al id
+    } else if (area.startsWith("#") && currentPath !== "/"){
+      navigate("/"); // Redirige a la página principal antes de desplazarse a la sección
       setTimeout(() => {
         const element = document.getElementById(area.substring(1));
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
       }, 500); // Espera 500ms para asegurarse de que la redirección se complete antes del desplazamiento
+
+      //si se está en inicio simplemente se scrollea al area
+    } else if (area.startsWith("#") && currentPath === "/"){
+      const element = document.getElementById(area.substring(1));
+        element.scrollIntoView({ behavior: "smooth" });
+        
+    }
+    //si se está en inicio o no, se redirije al área
+    else {
+      navigate(area);
     }
   };
 
-  // Maneja el click en los enlaces de navegación
   const handleNavLinkClick = (area, existingOnClick) => {
     if (existingOnClick) {
       existingOnClick(); // Llama a la función onClick existente si hay alguna
@@ -47,23 +58,20 @@ const Nav = () => {
     handleScrollOrRedirection(area); // Llama a la función para redirección o desplazamiento
   };
 
-  // Obtiene el scrollY y detecta cuando hay cambios
-  // const { scrollY } = useScroll();
-  // const [hidden, setHidden] = useState(false); // Controla el ocultamiento del nav al hacer scroll
+  const { scrollY } = useScroll();
+  const [hidden, setHidden] = useState(false); // Controla el ocultamiento del nav al hacer scroll
 
-  // Modifica el estado de 'hidden' en base al scroll
-  // useMotionValueEvent(scrollY, "change", (latest) => {
-  //   const previous = scrollY.getPrevious();
-  //   if (latest > previous) {
-  //     setHidden(true);
-  //   } else {
-  //     setHidden(false);
-  //   }
-  // });
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   // Controla si el menú está abierto o cerrado
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // Maneja el cierre del menú
   const handleCloseMenu = () => {
     setIsMenuOpen(false);
   };
@@ -103,16 +111,6 @@ const Nav = () => {
       </label>
 
       <div className="left-nav">
-        <a
-          href="/"
-          className="home"
-          onClick={(event) => {
-            event.preventDefault();
-            handleCloseMenu();
-            handleNavLinkClick("/");
-          }}
-        >
-        </a>
 
         <nav>
           {navLinks.map((link, index) => (

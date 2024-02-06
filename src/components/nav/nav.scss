@@ -42,6 +42,8 @@ header{
                 &:hover{
                     box-shadow:  4px 4px 10px #2b012b84,
                         -4px -4px 10px #26012680;
+                    outline: 1px solid var(--white-color);
+                    transition: 0.3s;
                 } 
             }
         }
