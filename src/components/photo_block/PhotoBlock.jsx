@@ -7,14 +7,14 @@ import { NavLink } from "react-router-dom";
 import { FaAnglesRight } from "react-icons/fa6";
 import '../../animations/bounce.scss';
 
-function PhotoBlock({ title, text, image, side, socials, center, link, linkName, id }) {
+function PhotoBlock({ title, text, image, side, socials, center, link, linkName, id, padding_right }) {
     const photo = `${side === "left" ? "left-sided" : ""}`;
     const centered = `${center === true ? "centered" : "space-between"}`;
-
+    const padding = `${padding_right === true ? "padding-right" : ""}`;
     const page = `${link? "link" : ""}`;
 
   return (
-    <div className={`photo-block ${photo} ${centered}`} id={id}>
+    <div className={`photo-block ${photo} ${centered} ${padding}`} id={id}>
         <div className={`col1 ${centered}`}>
             <div className="info">
                 <h3>{title}</h3>

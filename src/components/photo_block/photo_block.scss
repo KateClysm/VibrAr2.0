@@ -2,7 +2,6 @@
     flex-direction: row-reverse;
 }
 
-
 .photo-block{
     width: 100%;
     box-shadow:  5px 5px 16px #56055680,
@@ -91,4 +90,8 @@
 
 .space-between{
     justify-content: space-between;
+}
+
+.padding-right{
+    padding-right: 4rem;
 }

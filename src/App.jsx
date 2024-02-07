@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer.jsx';
 import Eventos from './pages/eventos/Eventos.jsx';
 import Nosotros from './pages/nosotros/Nosotros.jsx';
 import Noticias from './pages/noticias/Noticias.jsx';
+import Artista from './pages/artista/Artista.jsx';
 
 function App() {
 
@@ -43,7 +44,7 @@ function App() {
         },
         {
           path: '/artista' ,
-          element: <Noticias />
+          element: <Artista />
         },
       ]
     }
