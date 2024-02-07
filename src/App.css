@@ -1,6 +1,10 @@
-.window{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.layout{
     width: 100%;
+    
+    .window{
+        width: 70vw;
+        margin-top: 8rem;
+        padding-bottom: 4rem;
+        row-gap: 2rem;
+    }
 }

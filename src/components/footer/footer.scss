@@ -5,7 +5,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     position: relative;
     .divisor{
         width: 100%;
@@ -23,8 +23,9 @@ footer{
         font-family: "Sacramento", cursive;
     }
 
-    img{
+    .footer-logo{
         height: 7vh;
+        width: auto;
     }
     
 }

@@ -16,7 +16,6 @@
 }
 
 body{
-    /* background-color: var(--black-color); */
     background-image: url(/public/7509871_3676909.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +30,6 @@ html, body {
     
 a { text-decoration: none; }
     
-.footer-icon { font-size: 1.4rem; }
 p{ font-size: 1.3rem; }
 h1 {
     font-size: 4rem;
@@ -41,7 +39,7 @@ h1 {
 h2 { font-size: 3rem;}
 h3 { font-size: 2rem;  }
 h4 { font-size: 1.3rem;  font-weight: lighter;}
-button, a { font-size: 1.5rem; }
+button, a { font-size: 1.2rem; }
 button{
     background-color: transparent;
     outline: none;
@@ -55,3 +53,88 @@ html {font-size: var(--font-size-small-mobile);}
 @media (min-width: 1400px) { html {font-size: var(--font-size-desktop);} }
 @media (min-width: 1900px) { html {font-size: var(--font-size-large-desktop);} }
 @media (min-width: 2500px) { html {font-size: var(--font-size-huge-desktop);} }
+
+.shadows{
+    box-shadow: 
+    5px 5px 16px #56055680,
+    -5px -5px 16px #44044480;
+
+}
+
+.bg-white{
+    background-color: var(--white-color);
+}
+
+.br-32{
+    border-radius: 32px;
+}
+
+.p4{
+    padding: 4rem;
+}
+
+.p2{
+    padding: 2rem;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.alitems-center{
+    align-items: center;
+}
+
+.rowg-2{
+    row-gap: 2rem;
+}
+.colg-2{
+    column-gap: 2rem;
+}
+
+.white-outline{
+    outline: 2px solid var(--white-color);
+}
+.hover-outline-white{
+    outline: 1px solid white;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.arrow {
+    color: var(--fucsia-color);
+    font-size: 1.5rem;
+}
+
+.colorfull-button {
+    background-image: radial-gradient(circle, #fb6f60, #fc6361, #fc5664, #fc4767, #fb366c);
+    color: var(--white-color);
+    width: fit-content;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem;
+    a {
+        color: var(--white-color);
+        padding: 0.8rem 1.2rem;
+        transition: 0.3s;
+        border-radius: 32px;
+
+        &:hover {
+            color: var(--fucsia-color);
+            background-color: var(--white-color);
+        }
+    }
+}
+
+.trans-3s{
+    transition: 0.3s;
+}
+
+.justify-center{
+    justify-content: center;
+}
