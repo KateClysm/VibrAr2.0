@@ -1,17 +1,23 @@
 import "./homepage.scss";
 import React, { useState, useEffect } from "react";
+import { FaAnglesRight, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+
+//components
+import LongPill from "../../components/long_pill/LongPill";
 import Slider from "../../components/slider/Slider";
 import Card from "../../components/card/Card";
+
+//images
 import concerts from "../../../public/fotografias/concert1.jpg";
 import gossip from "../../../public/fotografias/gossip.jpg";
-import LongPill from "../../components/long_pill/LongPill";
-import PhotoBlock from "../../components/photo_block/PhotoBlock";
 import peoplecontact from "/people.jpg";
 import attractingpeople from "/attracting.jpg";
-
-
+import fotografias from "../../assets/images"
 
 function HomePage() {
+
   const [artistsList, setArtistsList] = useState([]);
 
   useEffect(() => {
@@ -30,100 +36,19 @@ function HomePage() {
     fetchData();
   }, []);
 
-  const fotografias = [
-    {
-      nombre: "concert1",
-      clase: "wide",
-    },
-    {
-      nombre: "concert2",
-      clase: "normal",
-    },
-    {
-      nombre: "concert3",
-      clase: "normal",
-    },
-    {
-      nombre: "concert4",
-      clase: "tall",
-    },
-    {
-      nombre: "concert5",
-      clase: "normal",
-    },
-    {
-      nombre: "concert6",
-      clase: "normal",
-    },
-    {
-      nombre: "concert7",
-      clase: "wide",
-    },
-    {
-      nombre: "concert8",
-      clase: "tall",
-    },
-    {
-      nombre: "concert9",
-      clase: "normal",
-    },
-    {
-      nombre: "concert10",
-      clase: "wide",
-    },
-    {
-      nombre: "concert11",
-      clase: "normal",
-    },
-    {
-      nombre: "concert12",
-      clase: "wide",
-    },
-    {
-      nombre: "concert13",
-      clase: "normal",
-    },
-    {
-      nombre: "concert14",
-      clase: "normal",
-    },
-    {
-      nombre: "concert15",
-      clase: "tall",
-    },
-    {
-      nombre: "concert16",
-      clase: "wide",
-    },
-    {
-      nombre: "concert17",
-      clase: "wide",
-    },
-    {
-      nombre: "concert18",
-      clase: "normal",
-    },
-    {
-      nombre: "concert19",
-      clase: "normal",
-    },
-    {
-      nombre: "concert20",
-      clase: "wide",
-    },
-  ];
-
   return (
     <section className="homepage" id="inicio">
       <Slider images={artistsList} />
 
       <div className="container-info">
         <Card
+          link="/eventos"
           image={concerts}
           title={"PRÓXIMOS RECITALES"}
           direction={"left"}
         />
         <Card
+          link="#"
           image={gossip}
           title={"NOTICIAS DE ARTISTAS"}
           direction={"right"}
@@ -138,7 +63,24 @@ function HomePage() {
         color={true}
       />
 
-      <PhotoBlock title="ATRAEMOS BUENAS VIBRAS" text="Y manifestamos los recitales que tanto querés que sucedan"  image={attractingpeople} center={true} link={"#"} linkName={"Conoce más sobre nosotros"}/>
+      <div className="photo-block centered">
+        <div className="col1">
+          <div className="info">
+            <h3>ATRAEMOS BUENAS VIBRAS</h3>
+            <p>Y manifestamos los recitales que tanto querés que sucedan</p>
+          </div>
+          <div className="buttons link">
+            <div className="container-link">
+              <NavLink to="/nosotros">Conoce más sobre nosotros</NavLink>
+            </div>
+
+            <FaAnglesRight className="arrow bouncingX" />
+          </div>
+        </div>
+        <div className="col2">
+          <img src={attractingpeople} alt="" />
+        </div>
+      </div>
 
       <LongPill
         title={"NUESTRO GRANITO DE ARENA"}
@@ -155,9 +97,26 @@ function HomePage() {
         ))}
       </div>
 
-      <PhotoBlock title="CONTACTATE CON NOSOTROS" text="Podes encontrarnos en todas las redes sociales con un solo click!" image={peoplecontact} socials={true} side="left" center={true} id={"contacto"}/>
+      <div className="photo-block centered left-sided" id="contacto">
+        <div className="col1">
+          <div className="info">
+            <h3>CONTACTATE CON NOSOTROS</h3>
+            <p>
+              Podes encontrarnos en todas las redes sociales con un solo click!
+            </p>
+          </div>
 
-      
+          <div className="buttons">
+            <FaXTwitter className="red-icon" />
+            <FaFacebook className="red-icon" />
+            <FaInstagramSquare className="red-icon" />
+          </div>
+
+        </div>
+        <div className="col2">
+          <img src={peoplecontact} alt="" />
+        </div>
+      </div>
     </section>
   );
 }

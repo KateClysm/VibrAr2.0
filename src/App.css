@@ -3,8 +3,17 @@
     
     .window{
         width: 70vw;
-        margin-top: 8rem;
+        margin-top: 3rem;
         padding-bottom: 4rem;
         row-gap: 2rem;
+    }
+}
+
+@media (max-width: 900px){
+    .layout{
+        .window{
+            margin-top: 1rem;
+            width: 95%;
+        }
     }
 }

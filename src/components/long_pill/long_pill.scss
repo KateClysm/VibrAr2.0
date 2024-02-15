@@ -33,3 +33,9 @@
         --rotate: 360deg;
     }
 }
+
+@media (max-width: 700px){
+    .long-pill{
+        padding: 3rem 2rem;
+    }
+}

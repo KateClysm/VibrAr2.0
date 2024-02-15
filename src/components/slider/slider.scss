@@ -19,8 +19,9 @@
         }
 
         button{
-            padding: 0.2rem;
+            padding: 0.1rem;
             border-radius: 50%;
+            font-size: 1.7rem;
             border: none;
             background: rgb(251,111,96);
                 background: linear-gradient(140deg, rgba(251,111,96,1) 0%, rgba(251,54,108,1) 61%);
@@ -66,7 +67,7 @@
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 900px){
     .container-slider{
         width: 95vw;
         padding: 0 0;
