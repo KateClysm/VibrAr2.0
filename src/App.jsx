@@ -12,7 +12,7 @@ function App() {
 
   const Layout = () => {
     return (
-      <div className='layout flex-column alitems-center '> 
+      <div className='layout'> 
         <div className="window">
           <Nav />
           <Outlet />

@@ -8,11 +8,11 @@ function Nosotros () {
   return (
     <div className="nosotros">
 
-        <img src={logo} alt="" className="logo"/>
+        <img src={logo} alt="VibrAr Logo" className="logo"/>
+
         <LongPill title={"Quiénes somos?"} text="Somos un grupo voluntario de personas unidas por el amor a la música"/>
 
-
-        <img src={nosotros} alt="" className="nosotros-img"/>
+        <img src={nosotros} alt="people ilustration" className="nosotros-img"/>
 
         <LongPill
         title={"NUESTRA META"}

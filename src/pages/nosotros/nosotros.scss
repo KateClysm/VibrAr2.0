@@ -1,10 +1,7 @@
 .nosotros{
-    width: 70vw;
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
-    padding-bottom: 4rem;
+    row-gap: 3rem;
 
     .nosotros-img{
         width: 100%;
@@ -16,5 +13,14 @@
         width: 30%;
         height: auto;
         align-self: center;
+    }
+}
+
+@media (max-width: 700px){
+    .nosotros{
+        row-gap: 2rem;
+        .logo{
+            width: 45%;
+        }
     }
 }

@@ -3,9 +3,8 @@
     flex-direction: column;
     align-items: center;
     row-gap: 3rem;
-    padding-bottom: 4rem;
     
-
+    
     .container-info, .grid-fotos{
         width: 100%;
     }
@@ -170,6 +169,8 @@
 .centered {
     justify-content: center;
 }
+
+
 
 @media (max-width: 700px){
     .homepage{

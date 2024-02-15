@@ -37,7 +37,9 @@ function HomePage() {
   }, []);
 
   return (
-    <section className="homepage" id="inicio">
+
+    <section className="homepage">
+      
       <Slider images={artistsList} />
 
       <div className="container-info">
@@ -48,7 +50,7 @@ function HomePage() {
           direction={"left"}
         />
         <Card
-          link="#"
+          link="/noticias"
           image={gossip}
           title={"NOTICIAS DE ARTISTAS"}
           direction={"right"}
