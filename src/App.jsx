@@ -1,6 +1,7 @@
 import './App.css'
 import Nav from './components/nav/Nav';
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Outlet, RouterProvider, createBrowserRouter, useLocation } from 'react-router-dom';
 import HomePage from './pages/homepage/Homepage.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Eventos from './pages/eventos/Eventos.jsx';
@@ -22,10 +23,26 @@ function App() {
     );
   };
 
+  const ScrollToTop = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location.pathname]);
+
+    return null;
+  };
+
+
   const router = createBrowserRouter([
     {
       path: '/', 
-      element: <Layout />,
+      element: (
+        <>
+          <ScrollToTop />
+          <Layout />
+        </>
+      ),
       children: [
         {
           path: '/',

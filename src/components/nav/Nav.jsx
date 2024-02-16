@@ -17,7 +17,6 @@ const Nav = () => {
     
   ];
 
-  // Maneja el scroll o redireccionamiento a la sección indicada
   const handleScrollOrRedirection = (area) => {
     const currentPath = window.location.pathname;
   
@@ -27,7 +26,6 @@ const Nav = () => {
 
       //redirije a inicio cuando no te encuentras en él
     } else if (area === "/" && currentPath !== "/") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
       navigate("/");
 
       //si no se está en el inicio, primero se redirije a él y luego scrollea al id
@@ -48,7 +46,6 @@ const Nav = () => {
     }
     //si se está en inicio o no, se redirije al área
     else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
       navigate(area);
     }
   };
