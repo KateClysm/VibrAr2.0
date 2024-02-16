@@ -12,10 +12,7 @@
         position: relative;
         background: linear-gradient(to right, rgba(255, 0, 0, 0.34), rgba(128, 0, 128, 0.399));
         transition: background 0.3s ease;
-        &:hover {
-            cursor: pointer;
-            
-        }
+      
 
         button{
             padding: 0.1rem;
@@ -33,6 +30,7 @@
             &:hover{
                 background: rgb(251,111,96);
                 background: linear-gradient(140deg, rgb(252, 47, 24) 0%, rgb(255, 11, 76) 61%);
+            
             }
         }
 

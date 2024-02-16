@@ -1,6 +1,7 @@
 import LongPill from "../../components/long_pill/LongPill";
 import artistasData from "../../assets/artists.json";
 import "./eventos.scss";
+import { NavLink } from "react-router-dom";
 
 function Eventos() {
   const proximos_eventos = Object.keys(artistasData);
@@ -14,13 +15,17 @@ function Eventos() {
         }
       />
 
-      <div className="container-eventos">
-        {proximos_eventos.map((nombreArtista, index) => {
-          const artista = artistasData[nombreArtista];
+     <div className="container-eventos">
+        {proximos_eventos.map((nombre_artista, index) => {
+          const artista = artistasData[nombre_artista];
           return (
-            <div className="evento" key={index}>
-              <img src={`/baners_artistas/${artista.banner}`} alt="" />
-            </div>
+            <NavLink 
+              className="evento"
+              key={index}
+              to={`/artista/${nombre_artista}`}
+            >
+             <img src={`/baners_artistas/${artista.banner}`} alt="" />
+            </NavLink>
           );
         })}
       </div>

@@ -62,8 +62,8 @@ function App() {
           element: <Noticias />
         },
         {
-          path: '/artista' ,
-          element: <Artista />
+          path: '/artista/:nombre_artista',
+          element: <Artista />,
         },
       ]
     }

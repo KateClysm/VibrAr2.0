@@ -1,24 +1,23 @@
 {
 
-    "Taylor" : 
+    "TaylorSwift" : 
       {
-        "nombre": "TaylorSwift",
+        "nombre": "Taylor Swift",
   
         "banner": "taylorbaner.jpg",
   
-        "link":"taylor.html",
+        "link":"",
   
         "alt": "Baner Taylor Swift",
   
-        "ventaGeneral": "06/05",
+        "venta_general": "06/05",
   
-        "presentado": [
+        "presentado": 
           {
               "logo": "allaccess.png",
-              "link":"https://www.allaccess.com.ar/",
               "alt": "Logo Allacces"
           }
-        ],
+        ,
   
         "fechas": [
           {
@@ -38,7 +37,10 @@
           }
         ],
   
-        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
+        "descripcion": "numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur.",
+
+        "estadio": "Mas Monumental",
+        "estadio_img": "masmonumental.jpg"
      
     },
         
@@ -48,24 +50,17 @@
   
         "banner": "theweekndbaner.jpg",
   
-        "link":"theweeknd.html",
+        "link":"",
   
         "alt": "Baner The Weeknd",
   
-        "ventaGeneral": "15/03",
+        "venta_general": "15/03",
   
-        "presentado": [
+        "presentado": 
         {
             "logo": "allaccess.png",
-            "link":"https://www.allaccess.com.ar/",
             "alt": "Logo Allacces"
         },
-        {
-            "logo": "DF-dark.svg",
-            "link":"https://www.dfentertainment.com/",
-            "alt": "Logo DF entertainment"
-        }
-        ],
   
         "fechas": [
             {
@@ -80,7 +75,10 @@
             }
         ],
   
-        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
+        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
+
+        "estadio": "Mas Monumental",
+        "estadio_img": "masmonumental.jpg"
     },
   
     "Duki" : 
@@ -89,24 +87,17 @@
   
         "banner": "dukibaner.jpg",
   
-        "link":"duki.html",
+        "link":"",
   
         "alt": "Baner Duki",
   
-        "ventaGeneral": "29/03",
+        "venta_general": "29/03",
   
-        "presentado": [
+        "presentado": 
         {
             "logo": "allaccess.png",
-            "link":"https://www.allaccess.com.ar/",
             "alt": "Logo Allacces"
         },
-        {
-            "logo": "DF-dark.svg",
-            "link":"https://www.dfentertainment.com/",
-            "alt": "Logo DF entertainment"
-        }
-        ],
   
         "fechas": [
             {
@@ -121,7 +112,10 @@
             }
         ],
   
-        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
+        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
+
+        "estadio": "Mas Monumental",
+        "estadio_img": "masmonumental.jpg"
     },
     
     "RedHotChiliPeppers":
@@ -130,24 +124,17 @@
   
         "banner": "rhcpbaner.png",
   
-        "link":"redhot.html",
+        "link":"",
   
         "alt": "Baner Red Hot Chili Peppers",
   
-        "ventaGeneral": "29/03",
+        "venta_general": "29/03",
   
-        "presentado": [
+        "presentado": 
         {
             "logo": "allaccess.png",
-            "link":"https://www.allaccess.com.ar/",
             "alt": "Logo Allacces"
         },
-        {
-            "logo": "DF-dark.svg",
-            "link":"https://www.dfentertainment.com/",
-            "alt": "Logo DF entertainment"
-        }
-        ],
   
         "fechas": [
             {
@@ -162,7 +149,10 @@
             }
         ],
   
-        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
+        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
+
+        "estadio": "Mas Monumental",
+        "estadio_img": "masmonumental.jpg"
     },
   
     "Evanescence": 
@@ -171,19 +161,17 @@
   
         "banner": "Evanescencebaner.jpg",
   
-        "link":"evanescence.html",
+        "link":"",
   
         "alt": "Baner Evanescense",
   
-        "ventaGeneral": "16/06",
+        "venta_general": "16/06",
   
-        "presentado": [
+        "presentado":
         {
             "logo": "logo_movistar_arena.svg",
-            "link":"https://www.movistararena.com.ar/show/evanescence/",
             "alt": "Logo Movistar Arena"
-        }
-        ],
+        },
 
   
         "fechas": [
@@ -194,7 +182,10 @@
             }
         ],
   
-        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
+        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
+
+        "estadio": "Mas Monumental",
+        "estadio_img": "masmonumental.jpg"
     },
   
     "Maneskin":
@@ -203,19 +194,18 @@
   
         "banner": "maneskinbaner.jpg",
   
-        "link":"maneskin.html",
+        "link":"",
   
         "alt": "Baner Maneskin",
   
-        "ventaGeneral": "29/03",
+        "venta_general": "29/03",
   
-        "presentado": [
+        "presentado": 
         {
             "logo": "logo_movistar_arena.svg",
-            "link":"https://www.movistararena.com.ar/show/evanescence/",
             "alt": "Logo Movistar Arena"
         }
-        ],
+        ,
   
         "fechas": [
             {
@@ -225,7 +215,10 @@
             }
         ],
   
-        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
+        "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
+
+        "estadio": "Mas Monumental",
+        "estadio_img": "masmonumental.jpg"
     }
 
 }

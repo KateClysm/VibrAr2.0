@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { FaAnglesRight, FaXTwitter } from "react-icons/fa6";
 import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import '../../animations/bounce.scss'
 
 //components
 import LongPill from "../../components/long_pill/LongPill";

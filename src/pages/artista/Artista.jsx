@@ -1,31 +1,33 @@
-
 import "./artista.scss";
-import baner from "/baners_artistas/Evanescencebaner.jpg"
+import React from "react";
 import { FaAnglesRight } from "react-icons/fa6";
-import allaccess from "/allaccess.png"
-import { NavLink } from "react-router-dom";
-function Artista () {
+import { NavLink, useParams } from "react-router-dom";
+import '../../animations/bounce.scss';
+import artistasData from "../../assets/artists.json";
+import mic from "/mic.png";
+import drum from "/drum-set.png"
+import guitar from "/electric-guitar.png"
 
+function Artista() {
+  //recibo la key de mis parámetros
+  const { nombre_artista } = useParams();
+  //imprimo la key para chequear que sí la extraje
+  console.log("Nombre del artista pasado por parámetro:", nombre_artista);
+  //busco el artista de artistasData cuya key coincida con lo depositado en nombreArtista y lo deposito en una constante llamada artista
+  const artista = artistasData[nombre_artista];
 
   return (
-    <div className="artista flex-column rowg-2">
-      
-
-      <div className="presentacion shadows bg-white br-32 p4 colg-2 ">
-        <div className="col1 flex-column">
+    <div className="artista">
+      <div className="presentacion shadows ">
+        <div className="col1">
           <div>
-            <h3>Evanescense</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              inventore officiis nesciunt maxime magni, atque quaerat vitae quia
-              earum veniam nobis debitis praesentium consequatur, optio incidunt
-              dicta. Alias, cupiditate a.
-            </p>
+            <h3>{artista.nombre}</h3>
+            <p>{artista.descripcion}</p>
           </div>
 
-          <div className="link alitems-center">
-            <div className="colorfull-button">
-              <NavLink to="/">Ir a la página</NavLink>
+          <div className="link">
+            <div className="container-link">
+              <NavLink to={artista.link}>Ir a la página</NavLink>
             </div>
 
             <FaAnglesRight className="arrow bouncingX" />
@@ -33,40 +35,55 @@ function Artista () {
         </div>
 
         <div className="col2 ">
-          <img src={allaccess} alt="" />
+          <img src={`/${artista.presentado.logo}`} alt={artista.presentado.alt} />
         </div>
       </div>
 
-      <img src={baner} alt="" className="br-32 white-outline" />
-      
+      <img
+        src={`/baners_artistas/${artista.banner}`}
+        alt={artista.alt}
+        className="baner"
+      />
+
       <div className="info">
+        <div className="venta-general">
+          <h3>VENTA GENERAL</h3>
+          <p>{artista.venta_general}</p>
+        </div>
 
-
-          <div className="fechas">
-              <h3>FECHAS</h3>
-              <div className="fechas-container">
+        <div className="fechas">
+          <h3>FECHAS</h3>
+          <div className="fechas-container">
+          {artista.fechas.map((fecha, index) => (
                 <div className="fecha">
-                    <p><span>Día:</span> 10/11/2023</p>
-                    <p><span>Locación:</span> Buenos Aires, Argentina</p>
-                    <p><span>Estadio:</span> Estadio River Plate</p>
+                  <div key={index}>
+                  <p>
+                    <span>Día:</span>
+                    {fecha.dia}
+                  </p>
+                  <p>
+                    <span>Locación:</span>
+                    {fecha.locacion}
+                  </p>
+                  <p>
+                    <span>Estadio:</span>
+                    {fecha.estadio}
+                  </p>
                 </div>
-                <div className="fecha">
-                    <p><span>Día:</span> 10/11/2023</p>
-                    <p><span>Locación:</span> Buenos Aires, Argentina</p>
-                    <p><span>Estadio:</span> Estadio River Plate</p>
                 </div>
-                <div className="fecha">
-                    <p><span>Día:</span> 10/11/2023</p>
-                    <p><span>Locación:</span> Buenos Aires, Argentina</p>
-                    <p><span>Estadio:</span> Estadio River Plate</p>
-                </div>
-              </div>
+              ))}
           </div>
+        </div>
 
-          <div className="estadio">
-            <h3>DÓNDE VERÁS A TU ARTISTA</h3>
-            <img src="/estadios/masmonumental.jpg" alt="" />
-          </div>
+        <div className="estadio">
+          <h3>DÓNDE VERÁS A TU ARTISTA</h3>
+          <img src={`/estadios/${artista.estadio_img}`} alt={artista.estadio} />
+        </div>
+
+
+        {/* <img src={drum} alt="" className="drum"/> */}
+        <img src={mic} alt="" className="mic"/>
+        <img src={guitar} alt="" className="guitar"/>
       </div>
     </div>
   );
