@@ -1,0 +1,76 @@
+{
+
+    "lugar" : {
+      "Estadio": [
+        "Calzado reforzado y barato, bien atados, si es bota mejor, pero que no sean nuevas, y unas medias acolchonadas pueden salvar el día, acordate!",
+
+        "Riñonera bien ajustada, cruzada entre el cuello y la cintura. Si la podés meter por debajo de tu remera, mejor!",
+
+       "El clima dentro del estadio puede variar dependiendo de dónde estés, el viento o sol pueden estar más presente en una sección que en otra, tené esto en cuenta a la hora de comprar tus tickets y de ir al concierto, capaz necesites una campera u gorra!",
+
+       "Asumí que no vas a ingerir bebiba u alimento ni ir al baño durante mucho tiempo, si podés llevá caramelos u alimentos pequeños que puedas consumir siendo discretx.",
+       
+       "Si vas con alguien, establecé uno o varios puntos de encuentro en común en caso de que alguien se pierda!"
+      ],
+      "Teatro": [
+        "La etiqueta de Teatro suele ser un poco diferente que la de un Estadio u Hipódromo, no vas a tener que preocuparte tanto por los cambios de clima, asi que tenés más libertad para elegir tu outfit!",
+
+       "Si vas con alguien, establecé uno o varios puntos de encuentro en común en caso de que alguien se pierda!"
+      ],
+      "Hipodromo": [
+        "Calzado reforzado y barato, bien atados, si es bota mejor, pero que no sean nuevas, y unas medias acolchonadas pueden salvar el día, acordate!",
+
+        "Riñonera bien ajustada, cruzada entre el cuello y la cintura. Si la podés meter por debajo de tu remera, mejor!",
+
+        "El sol en el Hipódromo puede ser brutal, acordate de aplicarte protector solar y en lo posible, llevar gorra!",
+
+        "Las filas para consumir agua u comestibles pueden ser eternas y súper caras, asumí que no vas a ingerir bebiba u alimento ni ir al baño durante mucho tiempo, si podés llevá caramelos u alimentos pequeños que puedas consumir siendo discretx.",
+        
+        "Si vas con alguien, establecé uno o varios puntos de encuentro en común en caso de que alguien se pierda!"
+      ]
+    },
+
+    "estadia" : 
+      {
+        "Buenos Aires, Capital Federal": [
+          
+          "Elección Estratégica de Alojamiento: Opta por alojamientos en barrios cercanos al lugar del concierto, esto facilitará tu movilidad y te permitirá explorar la vida nocturna local.",
+
+          "Airbnb para Experiencia Local: Considera opciones de Airbnb en áreas residenciales para vivir una experiencia más auténtica. Además, es posible que encuentres opciones más económicas y personalizadas para tu estancia.",
+
+          "Servicios de Transporte Privado: Contrata servicios de transporte privado como Uber o Cabify para moverte de manera conveniente y segura por la ciudad. Son opciones eficientes, especialmente después de un concierto cuando la demanda de taxis puede ser alta.",
+
+          "Hoteles Cercanos a Estaciones de Subte: Si prefieres hoteles, elige aquellos cerca de estaciones de subte para facilitar tus desplazamientos. El subte es una forma rápida y económica de moverse por Buenos Aires.",
+
+          "Planifica con Tiempo: Reserva tu alojamiento y transporte con anticipación, especialmente en fechas de conciertos populares. Esto te garantizará mejores tarifas y opciones disponibles."
+        ],
+        "Buenos Aires, La Plata": [
+          "Alojamientos en el Centro: Busca hoteles o hostels en el centro de La Plata para estar cerca del epicentro cultural y de entretenimiento. Esto facilitará tu movilidad antes y después del concierto.",
+
+          "Explora Opciones de Alquiler Temporario: Considera opciones de alquiler temporario en la zona central para una experiencia más cómoda y personalizada. Plataformas como Airbnb ofrecen variedad y flexibilidad.",
+
+          "Traslados en Taxi o Remis: Utiliza taxis o servicios de remis para moverte eficientemente en La Plata. Asegúrate de tener números de servicios confiables guardados o apps de transporte instaladas.",
+
+          "Conoce las Rutas de Colectivos: Familiarízate con las rutas de colectivos (autobuses) que conectan distintos puntos de la ciudad. Es una opción práctica y económica para desplazarte.",
+
+          "Consulta Recomendaciones Locales: Pregunta a locales o a la comunidad online sobre recomendaciones de alojamientos y transporte para eventos en específico. Obtendrás consejos valiosos basados en experiencias previas."
+        ]
+    },
+
+    "viaje" : [
+      "Reserva Vuelos con Antelación: Asegúrate de reservar tus vuelos con anticipación para garantizar disponibilidad y obtener mejores tarifas. Las aerolíneas suelen ofrecer descuentos por reserva temprana.",
+
+      "Verifica la Ubicación del Aeropuerto: Al elegir el vuelo, verifica si el aeropuerto de destino está cercano al lugar del concierto. Algunas ciudades tienen varios aeropuertos, y la elección puede afectar tu comodidad y costo de transporte adicional.",
+
+      "Revisa Horarios y Rutas: Verifica los horarios y rutas disponibles para llegar al lugar del concierto. Asegúrate de conocer las opciones de transporte nocturno para el regreso después del evento.",
+
+      "Considera Servicios Ejecutivos o Semi-Cama: Si el viaje es largo, valora la posibilidad de optar por servicios ejecutivos o semi-cama para mayor comodidad. Muchos servicios ofrecen asientos reclinables y servicios a bordo.",
+
+      "Llega con Tiempo de Sobra: Planifica tu viaje para llegar al lugar del concierto con tiempo suficiente. Los imprevistos de tráfico o retrasos en el colectivo pueden afectar tu llegada si dejas todo para el último minuto.",
+
+      "Consulta con Locales o en Foros: Pregunta a locales o busca en foros de viajeros consejos específicos sobre la mejor forma de llegar al recital en colectivo. Podrás obtener información actualizada y recomendaciones prácticas.",
+
+      "Calcula Tiempo para Traslados: Considera el tiempo necesario para trasladarte desde el aeropuerto hasta el lugar del concierto. Asegúrate de conocer las opciones de transporte local y calcula los tiempos de manera realista."
+    ]
+
+}

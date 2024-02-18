@@ -14,7 +14,7 @@
         column-gap: 2rem;
 
         .col2 {
-            width: 40%;
+            width: 35%;
             display: flex;
             align-self: center;
             img{
@@ -94,7 +94,7 @@
         flex-direction: column;
         row-gap: 4rem;
         position: relative;
-        margin-top: 3rem;
+        margin: 8rem 0 4rem 0;
 
         .venta-general{
             display: flex;
@@ -107,6 +107,7 @@
                 font-size: 2.5rem;
                 text-align: center;
                 font-weight: bold;
+                color: var(--fucsia-color);
             }
         }
         .fechas{
@@ -150,6 +151,57 @@
             }
         }
 
+        .container-consejos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+
+            h3{
+                width: 100%;
+                color: var(--fucsia-color);
+                
+                padding-bottom: 2rem;
+            }
+
+            .consejos{
+                > *:not(:last-child) {
+                    margin-bottom:2rem;
+                  }
+                &-estadio, &-estadia, &-viaje{
+                    padding: 3rem ;
+                    border-radius: 32px;
+                    border: 2px solid var(--fucsia-color);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h4{
+                        padding-bottom: 1rem;
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                    }
+                    .sub-consejo{
+                        font-size: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                    ul{
+                        width: fit-content;
+                        list-style: circle;
+                        gap: 1rem;
+                        li{
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    ul > *:not(:last-child) {
+                        padding-bottom: 1rem;
+                      }
+                    
+                }
+            }
+        }
         .mic, .guitar{
             position: absolute;
             width: 30%;
@@ -190,14 +242,14 @@
         }
 
         .info {
-            padding: 55vw 1rem 6rem 1rem;
+            padding: 3rem 1rem;
             row-gap: 2rem;
+            margin: 0;
     
             .venta-general{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-left: 0;
                 padding: 2rem 0rem;
 
     
@@ -221,18 +273,10 @@
                 }
             }
     
-            .mic{
-                width: 40%;
-            }
-            .guitar{
+            .mic, .guitar{
+                position: relative;
                 width: 50%;
-            }
-            .mic{
                 bottom: 2%;
-                right: 3%;
-            }
-            .guitar{
-                top:2%;
                 left: 25%;
             }
         }

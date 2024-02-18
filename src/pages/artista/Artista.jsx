@@ -4,8 +4,8 @@ import { FaAnglesRight } from "react-icons/fa6";
 import { NavLink, useParams } from "react-router-dom";
 import '../../animations/bounce.scss';
 import artistasData from "../../assets/artists.json";
+import consejosData from "../../assets/consejos.json";
 import mic from "/mic.png";
-import drum from "/drum-set.png"
 import guitar from "/electric-guitar.png"
 
 function Artista() {
@@ -15,6 +15,10 @@ function Artista() {
   console.log("Nombre del artista pasado por parámetro:", nombre_artista);
   //busco el artista de artistasData cuya key coincida con lo depositado en nombreArtista y lo deposito en una constante llamada artista
   const artista = artistasData[nombre_artista];
+
+  const consejos_lugar = consejosData.lugar[artista.tipo_de_lugar];
+  const consejos_estadia = consejosData.estadia[artista.locacion_exacta];
+  const consejos_viaje = consejosData.viaje;
 
   return (
     <div className="artista">
@@ -27,7 +31,7 @@ function Artista() {
 
           <div className="link">
             <div className="container-link">
-              <NavLink to={artista.link}>Ir a la página</NavLink>
+              <NavLink to={artista.link}>Ir a la Página Oficial</NavLink>
             </div>
 
             <FaAnglesRight className="arrow bouncingX" />
@@ -46,6 +50,7 @@ function Artista() {
       />
 
       <div className="info">
+      <img src={guitar} alt="Ilustración Guitarra" className="guitar"/>
         <div className="venta-general">
           <h3>VENTA GENERAL</h3>
           <p>{artista.venta_general}</p>
@@ -66,8 +71,8 @@ function Artista() {
                     {fecha.locacion}
                   </p>
                   <p>
-                    <span>Estadio:</span>
-                    {fecha.estadio}
+                    <span>Lugar:</span>
+                    {fecha.lugar}
                   </p>
                 </div>
                 </div>
@@ -77,13 +82,54 @@ function Artista() {
 
         <div className="estadio">
           <h3>DÓNDE VERÁS A TU ARTISTA</h3>
-          <img src={`/estadios/${artista.estadio_img}`} alt={artista.estadio} />
+          <img src={`/estadios/${artista.lugar_img}`} alt={artista.lugar} />
         </div>
 
 
-        {/* <img src={drum} alt="" className="drum"/> */}
-        <img src={mic} alt="" className="mic"/>
-        <img src={guitar} alt="" className="guitar"/>
+        <div className="container-consejos">
+
+            <h3>Consejos de parte del Staff de VibrAr:</h3>
+            
+            <div className="consejos">
+              <div className="consejos-estadio">
+                  <h4>{`Dónde verás a tu artista: ${artista.lugar}`}</h4>
+                  <p className="sub-consejo"><span>Te recomendamos:</span></p>
+                  <ul>
+                  {consejos_lugar.map((consejo, index) => (
+                    <li key={index}>{consejo}</li>
+                  ))}
+                  </ul>
+                </div>
+    
+                <div className="consejos-estadia">
+
+                    {/* quiero comparar la locacion_exacta con alguna de las locaciones que están en el json 'consejos' y si coincide, imprimir info referente a esa locación (ejemplo, Buenos Aires, Capital Federal) */}
+                    <h4>{`Dónde será el evento: ${artista.locacion_exacta}`}</h4>
+                      <p className="sub-consejo"><span>Esta data vale oro:</span></p>
+                      <ul>
+                      {consejos_estadia.map((consejo, index) => (
+                        <li key={index}>{consejo}</li>
+                      ))}
+                      </ul>
+                </div>
+                
+                <div className="consejos-viaje">
+
+                  {/* quiero imprimir lo referente a 'viaje' del json */}
+                  <h4>{`No sos de: ${artista.fechas[0].locacion} ?`}</h4>
+                      <p className="sub-consejo"><span>Consejos para tu viaje:</span></p>
+                      <ul>
+                      {consejos_viaje.map((consejo, index) => (
+                        <li key={index}>{consejo}</li>
+                      ))}
+                      </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <img src={mic} alt="Ilustración Micrófono" className="mic"/>
+        
       </div>
     </div>
   );

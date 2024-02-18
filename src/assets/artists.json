@@ -23,24 +23,26 @@
           {
           "dia": "09 de Noviembre",
           "locacion": "Buenos Aires, Argentina",
-          "estadio": "Estadio River Plate"
+          "lugar": "Estadio Mas Monumental"
           },
           {
           "dia": "10 de Noviembre",
           "locacion": "Buenos Aires, Argentina",
-          "estadio": "Estadio River Plate"
+          "lugar": "Estadio Mas Monumental"
           },
           {
           "dia": "11 de Noviembre",
           "locacion": "Buenos Aires, Argentina",
-          "estadio": "Estadio River Plate"
+          "lugar": "Estadio Mas Monumental"
           }
         ],
   
-        "descripcion": "numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur.",
+        "descripcion": "Taylor Swift, nacida el 13 de diciembre de 1989 en Reading, Pennsylvania, ha dejado una marca indeleble en la música pop. Desde sus inicios en el country hasta su evolución hacia el pop, Swift ha conquistado la industria con letras emotivas y melodías contagiosas. Además de sus éxitos globales, su activismo y apoyo a diversas causas la destacan como una figura influyente y auténtica en la escena musical contemporánea.",
 
-        "estadio": "Mas Monumental",
-        "estadio_img": "masmonumental.jpg"
+        "lugar": "Estadio Mas Monumental",
+        "tipo_de_lugar": "Estadio",
+        "lugar_img": "masmonumental.jpg",
+        "locacion_exacta": "Buenos Aires, Capital Federal"
      
     },
         
@@ -66,19 +68,21 @@
             {
             "dia": "18 de Octubre",
             "locacion": "Buenos Aires, Argentina",
-            "estadio": "Estadio River Plate"
+            "lugar": "Estadio River Plate"
             },
             {
             "dia": "19 de Octubre",
             "locacion": "Buenos Aires, Argentina",
-            "estadio": "Estadio River Plate"
+            "lugar": "Estadio River Plate"
             }
         ],
   
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
 
-        "estadio": "Mas Monumental",
-        "estadio_img": "masmonumental.jpg"
+        "lugar": "Mas Monumental",
+        "tipo_de_lugar": "Estadio",
+        "lugar_img": "masmonumental.jpg",
+        "locacion_exacta": "Buenos Aires, Capital Federal"
     },
   
     "Duki" : 
@@ -103,19 +107,21 @@
             {
             "dia": "2 de diciembre",
             "locacion": "Buenos Aires, Argentina",
-            "estadio": "Estadio River Plate"
+            "lugar": "Estadio River Plate"
             },
             {
             "dia": "3 de diciembre",
             "locacion": "Buenos Aires, Argentina",
-            "estadio": "Estadio River Plate"
+            "lugar": "Estadio River Plate"
             }
         ],
   
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
 
-        "estadio": "Mas Monumental",
-        "estadio_img": "masmonumental.jpg"
+        "lugar": "Mas Monumental",
+        "tipo_de_lugar": "Estadio",
+        "lugar_img": "masmonumental.jpg",
+        "locacion_exacta": "Buenos Aires, Capital Federal"
     },
     
     "RedHotChiliPeppers":
@@ -140,19 +146,21 @@
             {
             "dia": "24 de noviembre",
             "locacion": "Buenos Aires, Argentina",
-            "estadio": "Estadio River Plate"
+            "lugar": "Estadio River Plate"
             },
             {
             "dia": "26 de noviembre",
             "locacion": "Buenos Aires, Argentina",
-            "estadio": "Estadio River Plate"
+            "lugar": "Estadio River Plate"
             }
         ],
   
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
 
-        "estadio": "Mas Monumental",
-        "estadio_img": "masmonumental.jpg"
+        "lugar": "Mas Monumental",
+        "tipo_de_lugar": "Estadio",
+        "lugar_img": "masmonumental.jpg",
+        "locacion_exacta": "Buenos Aires, Capital Federal"
     },
   
     "Evanescence": 
@@ -178,14 +186,16 @@
             {
             "dia": "17 de Octubre",
             "locacion": "Buenos Aires, Argentina",
-            "estadio": "Humboldt 450"
+            "lugar": "Humboldt 450"
             }
         ],
   
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
 
-        "estadio": "Mas Monumental",
-        "estadio_img": "masmonumental.jpg"
+        "lugar": "Mas Monumental",
+        "tipo_de_lugar": "Estadio",
+        "lugar_img": "masmonumental.jpg",
+        "locacion_exacta": "Buenos Aires, Capital Federal"
     },
   
     "Maneskin":
@@ -211,14 +221,16 @@
             {
             "dia": "29 de octubre",
             "locacion": "Buenos Aires, Argentina",
-            "estadio": "Humboldt 450"
+            "lugar": "Humboldt 450"
             }
         ],
   
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.",
 
-        "estadio": "Mas Monumental",
-        "estadio_img": "masmonumental.jpg"
+        "lugar": "Mas Monumental",
+        "tipo_de_lugar": "Estadio",
+        "lugar_img": "masmonumental.jpg",
+        "locacion_exacta": "Buenos Aires, Capital Federal"
     }
 
 }

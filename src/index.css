@@ -1,5 +1,5 @@
 :root{
-    --fucsia-color: rgba(251,54,108,1);
+    --fucsia-color: #fb366c;
     --turquoise-color: #0095f6;
     --white-color: #FFFFFF;
     --black-color: #000000;
@@ -10,7 +10,6 @@
 *{  margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
