@@ -60,8 +60,9 @@ function HomePage() {
 
       <LongPill
         title={"RECIENTE"}
+        subtitle={"¡Rumor en Marcha! ¿Lana del Rey de Gira por Sudamérica?"}
         text={
-          "Se confirma el concierto de Lana del Rey para Argentina, Brazil y Chile, próximamente se anunciará el estadio y fechas."
+          "Los fans latinoamericanos de Lana del Rey están emocionados ante el rumor de una posible gira que incluiría Argentina, Chile y Brasil. Aunque no hay confirmación oficial, las especulaciones han encendido las redes sociales. Los seguidores comparten teorías sobre fechas y lugares, creando una ola de entusiasmo. Los representantes de la artista no han hecho comentarios hasta el momento. ¿Será este el año en que Lana del Rey llegue a Sudamérica? Mantente atento a VibrAr para actualizaciones sobre este emocionante rumor."
         }
         color={true}
       />
@@ -70,7 +71,7 @@ function HomePage() {
         <div className="col1">
           <div className="info">
             <h3>ATRAEMOS BUENAS VIBRAS</h3>
-            <p>Y manifestamos los recitales que tanto querés que sucedan</p>
+            <p>Y manifestamos los recitales que tanto querés que sucedan!</p>
           </div>
           <div className="buttons link">
             <div className="container-link">
@@ -88,7 +89,7 @@ function HomePage() {
       <LongPill
         title={"NUESTRO GRANITO DE ARENA"}
         text={
-          "Este es el fruto del esfuerzo de nuestro staff, te compartimos los momentos más felices que pudimos capturar gracias a nuestros fotógrafos voluntuarios"
+          "Explora el resultado del incansable trabajo de nuestro talentoso equipo. Compartimos contigo instantes de pura magia capturados por nuestros dedicados fotógrafos voluntarios. Sumérgete en la esencia de los momentos más felices vividos en los conciertos, capturados con pasión y entregados con cariño. En VibrAr, cada fotografía es nuestro granito de arena, nuestra manera de compartir la emoción de la música contigo. ¡Descubre la magia detrás de cada imagen y únete a nosotros para revivir los mejores momentos de la escena musical!"
         }
       />
 

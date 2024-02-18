@@ -1,6 +1,8 @@
 footer{
-    background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    // background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-color: #0070bbae;
     width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +11,7 @@ footer{
     position: relative;
     .divisor{
         width: 100%;
-        height: 0.3rem;
+        height: 0.2rem;
         background-image: radial-gradient(circle, #ff9387, #fc6361, #fc5664, #fc4767, #fb366c);
         align-self: self-start;
         position: absolute;
@@ -24,7 +26,7 @@ footer{
     }
 
     .footer-logo{
-        height: 7vh;
+        height: 4rem;
         width: auto;
     }
     

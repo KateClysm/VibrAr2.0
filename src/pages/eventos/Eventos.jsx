@@ -9,9 +9,9 @@ function Eventos() {
   return (
     <div className="eventos" id="eventos">
       <LongPill
-        title="Descubre todos los nuevos eventos por venir"
+        title="Descubre los Próximos Eventos Musicales en Argentina"
         text={
-          "haz click sobre el evento para saber todo lo necesario para planear uno de los mejores días de tu vida!"
+          "Prepárate para planear uno de los mejores días de tu vida. Desde detalles sobre artistas y ubicaciones hasta consejos exclusivos para optimizar tu experiencia, en VibrAr te damos todas las herramientas para que vivas la música como nunca antes."
         }
       />
 

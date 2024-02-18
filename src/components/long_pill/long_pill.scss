@@ -1,10 +1,7 @@
 .colorfull{
     background-image: radial-gradient(circle, #fb6f60, #fc6361, #fc5664, #fc4767, #fb366c);
     color: var(--white-color);
-    &:hover{
-        outline: 1px solid white;
-       
-    }
+    outline: 1px solid white;
 }
 
 .long-pill{
@@ -17,7 +14,7 @@
     
     position: relative;
 
-    h3{
+    h3, .subtitle{
         padding-bottom: 1rem;
     }
 
