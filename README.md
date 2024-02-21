@@ -42,16 +42,6 @@ VibrAr es un proyecto web desarrollado en React.js, JavaScript, Sass y Framer Mo
 ```
 <br/>
 
-## Contribuidores:
-María Monchot
-Agustina Barbona (Diseñadora de Logos)
-<br/>
-
-## Agradecimientos:
-Logos: Diseñados por Agustina Barbona.
-Imágenes: Proporcionadas por Vecteezy (creadas por Yuliya Pauliukevich), Flaticon y Pexels.
-<br/>
-
 ## Cómo Descargar y Montar el Proyecto:
 Clona este repositorio:
 git bash:
@@ -73,3 +63,12 @@ git bash
 npm run dev
 <br/>
 El proyecto estará disponible en el puerto que tengas configurado por default. En mi caso: http://localhost:5173/
+
+## Contribuidores:
+- María Monchot
+- Agustina Barbona (Diseñadora de Logos)
+<br/>
+
+## Agradecimientos:
+- Logos: Diseñados por Agustina Barbona.
+- Imágenes: Proporcionadas por Vecteezy (creadas por Yuliya Pauliukevich), Flaticon y Pexels.
