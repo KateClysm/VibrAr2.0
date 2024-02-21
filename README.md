@@ -1,11 +1,13 @@
 ## VibrAr
 Discover the Argentine Music Scene
 VibrAr is your essential guide to the latest events and rumors about concerts by artists coming to Argentina. Explore the exciting music scene with detailed information about dates, venues, and fresh news. Immerse yourself in the VibrAr experience, where music comes to life. Discover, vibe, and stay updated with the magic of music in Argentina!
-
+<br/>
 VibrAr is a web project developed in React.js, JavaScript, Sass, and Framer Motion. The original idea emerged as part of a group project in the Developer Full Stack training at 'Empujar Coders'. However, due to coordination challenges and time limitations, the project could not be completed properly in that context. I decided to take the initiative to resume the project and rebuild it from scratch.
+<br/>
 
 ## Figma
 https://www.figma.com/file/s88AxeEjqW1L2gIegRTKMm/VibrAr?type=design&node-id=0-1&mode=design&t=SEFgBIxZ6pRlORzc-0
+<br/>
 
 ## Technologies Used
 - React.js
@@ -14,6 +16,7 @@ https://www.figma.com/file/s88AxeEjqW1L2gIegRTKMm/VibrAr?type=design&node-id=0-1
 - Sass
 - Vite (as a development tool)
 Other dependencies, managed through npm (see package.json for more details)
+<br/>
 
 ## Dependencies
 ```json
@@ -41,24 +44,29 @@ Other dependencies, managed through npm (see package.json for more details)
   }
 }
 ```
+<br/>
 
 ## How to Download and Set Up the Project:
 Clone this repository:
 in bash / git bash:
 - git clone https://github.com/KateClysm/VibrAr2.0.git
-- 
+<br/>
+
 Enter the project directory:
 in bash / git bash
 - cd vibrar
+<br/>
 
 Install the dependencies:
 in bash / git bash
 - npm install
-- 
+<br/>
+
 Start the development server:
 in bash / git bash 
 - npm run dev
-  
+<br/>
+
 The project will be available on the port you have configured by default. In my case: http://localhost:5173/
 
 ## Contributors:
