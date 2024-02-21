@@ -7,6 +7,10 @@ VibrAr es tu guía esencial para conocer los eventos y rumores más recientes so
 VibrAr es un proyecto web desarrollado en React.js, JavaScript, Sass y Framer Motion. La idea original surgió como parte de un proyecto grupal en la capacitación Developer Full Stack de 'Empujar Coders'. Sin embargo, debido a desafíos de coordinación y limitaciones de tiempo, el proyecto no pudo ser completado de manera adecuada en ese contexto. Decidí tomar la iniciativa de retomar el proyecto y reconstruirlo desde cero.
 <br/>
 
+## Figma
+https://www.figma.com/file/s88AxeEjqW1L2gIegRTKMm/VibrAr?type=design&node-id=0-1&mode=design&t=SEFgBIxZ6pRlORzc-0
+<br/>
+
 ## Tecnologías Utilizadas
 - React.js
 - JavaScript
