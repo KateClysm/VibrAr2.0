@@ -45,7 +45,7 @@ VibrAr es un proyecto web desarrollado en React.js, JavaScript, Sass y Framer Mo
 ## Cómo Descargar y Montar el Proyecto:
 Clona este repositorio:
 en bash / git bash:
-- git clone https://github.com/tuusuario/vibrar.git
+- git clone https://github.com/KateClysm/VibrAr2.0.git
 <br/>
 
 Ingresa al directorio del proyecto:
