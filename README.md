@@ -6,6 +6,7 @@ VibrAr es un proyecto web desarrollado en React.js, JavaScript, Sass y Framer Mo
 
 ## Tecnologías Utilizadas
 - React.js
+- JavaScript
 - Framer Motion
 - Sass
 - Vite (como herramienta de desarrollo)
