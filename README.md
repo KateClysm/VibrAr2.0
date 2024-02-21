@@ -1,6 +1,8 @@
 # VibrAr
-<br/>
 
+Descubre la Escena Musical Argentina
+VibrAr es tu guía esencial para conocer los eventos y rumores más recientes sobre conciertos de artistas que llegarán a Argentina. Explora la emocionante escena musical con información detallada sobre fechas, lugares y noticias frescas. Sumérgete en la experiencia VibrAr, donde la música cobra vida. ¡Descubre, vibra y mantente actualizado con la magia de la música en Argentina!
+<br/>
 VibrAr es un proyecto web desarrollado en React.js, JavaScript, Sass y Framer Motion. La idea original surgió como parte de un proyecto grupal en la capacitación Developer Full Stack de 'Empujar Coders'. Sin embargo, debido a desafíos de coordinación y limitaciones de tiempo, el proyecto no pudo ser completado de manera adecuada en ese contexto. Decidí tomar la iniciativa de retomar el proyecto y reconstruirlo desde cero.
 <br/>
 
