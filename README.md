@@ -1,3 +1,77 @@
+## VibrAr
+Discover the Argentine Music Scene
+VibrAr is your essential guide to the latest events and rumors about concerts by artists coming to Argentina. Explore the exciting music scene with detailed information about dates, venues, and fresh news. Immerse yourself in the VibrAr experience, where music comes to life. Discover, vibe, and stay updated with the magic of music in Argentina!
+
+VibrAr is a web project developed in React.js, JavaScript, Sass, and Framer Motion. The original idea emerged as part of a group project in the Developer Full Stack training at 'Empujar Coders'. However, due to coordination challenges and time limitations, the project could not be completed properly in that context. I decided to take the initiative to resume the project and rebuild it from scratch.
+
+## Figma
+https://www.figma.com/file/s88AxeEjqW1L2gIegRTKMm/VibrAr?type=design&node-id=0-1&mode=design&t=SEFgBIxZ6pRlORzc-0
+
+## Technologies Used
+- React.js
+- JavaScript
+- Framer Motion
+- Sass
+- Vite (as a development tool)
+Other dependencies, managed through npm (see package.json for more details)
+
+## Dependencies
+```json
+{
+  "dependencies": {
+    "framer-motion": "^11.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "node-sass": "^9.0.0",
+    "sass": "^1.70.0",
+    "vite": "^5.0.8",
+    "vite-plugin-sass": "^0.1.0"
+  }
+}
+```
+
+## How to Download and Set Up the Project:
+Clone this repository:
+in bash / git bash:
+- git clone https://github.com/KateClysm/VibrAr2.0.git
+- 
+Enter the project directory:
+in bash / git bash
+- cd vibrar
+
+Install the dependencies:
+in bash / git bash
+- npm install
+- 
+Start the development server:
+in bash / git bash 
+- npm run dev
+  
+The project will be available on the port you have configured by default. In my case: http://localhost:5173/
+
+## Contributors:
+- María Monchot
+- Agustina Barbona (Logo Designer)
+
+## Acknowledgments:
+- Logos: Designed by Agustina Barbona.
+- Images: Provided by Vecteezy (created by Yuliya Pauliukevich), Flaticon, and Pexels.
+<br/>
+<br/>
+<br/>
+<br/>
 # VibrAr
 
 Descubre la Escena Musical Argentina
