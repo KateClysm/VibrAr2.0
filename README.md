@@ -44,25 +44,26 @@ VibrAr es un proyecto web desarrollado en React.js, JavaScript, Sass y Framer Mo
 
 ## Cómo Descargar y Montar el Proyecto:
 Clona este repositorio:
-git bash:
-git clone https://github.com/tuusuario/vibrar.git
+en bash / git bash:
+- git clone https://github.com/tuusuario/vibrar.git
 <br/>
 
 Ingresa al directorio del proyecto:
-git bash
-cd vibrar
+en bash / git bash
+- cd vibrar
 <br/>
 
 Instala las dependencias:
-git bash
-npm install
+en bash / git bash
+- npm install
 <br/>
 
 Inicia el servidor de desarrollo:
-git bash
-npm run dev
+en bash / git bash
+- npm run dev
 <br/>
 El proyecto estará disponible en el puerto que tengas configurado por default. En mi caso: http://localhost:5173/
+<br/>
 
 ## Contribuidores:
 - María Monchot
