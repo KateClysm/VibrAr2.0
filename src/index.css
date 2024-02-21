@@ -1,9 +1,7 @@
 :root{
     --fucsia-color: #fb366c;
-    --turquoise-color: #0095f6;
     --white-color: #FFFFFF;
     --black-color: #000000;
-    --peach-color: #fb6f60;
 }
 
 
@@ -15,7 +13,7 @@
 }
 
 body{
-    background-image: url(/public/7509871_3676909.jpg);
+    background-image: url(/public/waves.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,5 +55,4 @@ html {font-size: var(--font-size-small-mobile);}
     box-shadow: 
     5px 5px 16px #56055680,
     -5px -5px 16px #44044480;
-
 }

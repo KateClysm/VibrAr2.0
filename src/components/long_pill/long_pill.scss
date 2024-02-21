@@ -1,13 +1,11 @@
 .colorfull{
     background-image: radial-gradient(circle, #fb6f60, #fc6361, #fc5664, #fc4767, #fb366c);
     color: var(--white-color);
-    outline: 1px solid white;
+    outline: 1px solid var(--white-color);
 }
 
 .long-pill{
     width: 100%;
-    box-shadow:  5px 5px 16px #56055680,
-    -5px -5px 16px #44044480;
     background-color: var(--white-color);
     border-radius: 32px;
     padding: 3rem 4rem;

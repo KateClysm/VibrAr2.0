@@ -1,9 +1,10 @@
 import "./homepage.scss";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FaAnglesRight, FaXTwitter } from "react-icons/fa6";
 import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import '../../animations/bounce.scss'
+import artistasData from "../../assets/artistas.json";
 
 //components
 import LongPill from "../../components/long_pill/LongPill";
@@ -19,29 +20,13 @@ import fotografias from "../../assets/images"
 
 function HomePage() {
 
-  const [artistsList, setArtistsList] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/src/assets/artists.json");
-        const data = await response.json();
-
-        const artistsArray = Object.values(data);
-        setArtistsList(artistsArray);
-      } catch (error) {
-        console.error("Error fetching artists data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
+  const artistasArray = Object.values(artistasData);
 
   return (
 
     <section className="homepage">
       
-      <Slider images={artistsList} />
+      <Slider images={artistasArray} />
 
       <div className="container-info">
         <Card

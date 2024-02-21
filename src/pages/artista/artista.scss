@@ -55,7 +55,7 @@
     
     
                     &:hover {
-                        outline: 1px solid white;
+                        outline: 1px solid var(--white-color);
     
                     }
     
@@ -148,6 +148,7 @@
                 border-radius: 32px;
                 width: 80%;
                 height: auto;
+                border: 3px solid #74098fd3;
             }
         }
 

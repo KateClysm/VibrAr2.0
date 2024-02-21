@@ -3,7 +3,7 @@ import React from "react";
 import { FaAnglesRight } from "react-icons/fa6";
 import { NavLink, useParams } from "react-router-dom";
 import '../../animations/bounce.scss';
-import artistasData from "../../assets/artists.json";
+import artistasData from "../../assets/artistas.json";
 import consejosData from "../../assets/consejos.json";
 import mic from "/mic.png";
 import guitar from "/electric-guitar.png"
@@ -22,7 +22,7 @@ function Artista() {
 
   return (
     <div className="artista">
-      <div className="presentacion shadows ">
+      <div className="presentacion shadows">
         <div className="col1">
           <div>
             <h3>{artista.nombre}</h3>
@@ -38,7 +38,7 @@ function Artista() {
           </div>
         </div>
 
-        <div className="col2 ">
+        <div className="col2">
           <img src={`/${artista.presentado.logo}`} alt={artista.presentado.alt} />
         </div>
       </div>
@@ -46,11 +46,11 @@ function Artista() {
       <img
         src={`/baners_artistas/${artista.banner}`}
         alt={artista.alt}
-        className="baner"
+        className="baner shadows"
       />
 
-      <div className="info">
-      <img src={guitar} alt="Ilustración Guitarra" className="guitar"/>
+      <div className="info shadows">
+      <img src={guitar} alt="Ilustración Guitarra" className="guitar "/>
         <div className="venta-general">
           <h3>VENTA GENERAL</h3>
           <p>{artista.venta_general}</p>
@@ -63,15 +63,15 @@ function Artista() {
                 <div className="fecha">
                   <div key={index}>
                   <p>
-                    <span>Día:</span>
+                    <span>Día: </span>
                     {fecha.dia}
                   </p>
                   <p>
-                    <span>Locación:</span>
+                    <span>Locación: </span>
                     {fecha.locacion}
                   </p>
                   <p>
-                    <span>Lugar:</span>
+                    <span>Lugar: </span>
                     {fecha.lugar}
                   </p>
                 </div>
@@ -80,7 +80,7 @@ function Artista() {
           </div>
         </div>
 
-        <div className="estadio">
+        <div className="estadio ">
           <h3>DÓNDE VERÁS A TU ARTISTA</h3>
           <img src={`/estadios/${artista.lugar_img}`} alt={artista.lugar} />
         </div>

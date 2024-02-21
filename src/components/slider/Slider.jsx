@@ -1,7 +1,7 @@
 import "./slider.scss";
-import React, { useState } from "react";
-import { CiCircleChevLeft } from "react-icons/ci";
-import { CiCircleChevRight } from "react-icons/ci";
+import React, { useState, useEffect } from "react";
+// import { CiCircleChevLeft } from "react-icons/ci";
+// import { CiCircleChevRight } from "react-icons/ci";
 
 import { motion } from "framer-motion";
 
@@ -38,6 +38,8 @@ const variants = {
       };
     },
   };
+
+
   function nextStep() {
     setDirection(1);
     if (index === images.length - 1) {
@@ -56,9 +58,21 @@ const variants = {
     setIndex(index - 1);
   }
 
+  const autoAdvance = () => {
+    const intervalId = setInterval(() => {
+      nextStep();
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  };
+
+  useEffect(() => {
+    autoAdvance();
+  }, [index]); 
+
   return (
     <div className="container-slider">
-      <div className="slide-show">
+      <div className="slide-show shadows">
         {images.length > 0 && (
           <motion.img
             variants={variants}
@@ -73,12 +87,13 @@ const variants = {
           />
         )}
 
-        <button className="prevButton" onClick={prevStep}>
+        {/* <button className="prevButton" onClick={prevStep}>
           <CiCircleChevLeft />
         </button>
         <button className="nextButton" onClick={nextStep}>
           <CiCircleChevRight />
-        </button>
+        </button> */}
+        
       </div>
     </div>
   );

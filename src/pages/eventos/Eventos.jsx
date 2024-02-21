@@ -1,5 +1,5 @@
 import LongPill from "../../components/long_pill/LongPill";
-import artistasData from "../../assets/artists.json";
+import artistasData from "../../assets/artistas.json";
 import "./eventos.scss";
 import { NavLink } from "react-router-dom";
 

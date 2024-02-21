@@ -4,8 +4,6 @@
     width: 100%;
     border-radius: 32px;
     background: var(--white-color);
-    box-shadow: 5px 5px 16px #56055680,
-        -5px -5px 16px #44044480;
     padding-top: 1rem;
     background-size: cover;
     display: flex;
@@ -31,12 +29,14 @@
 
     &:hover {
         cursor: pointer;
-        color: var(--white-color);
         background: #fb6f60;
         background: linear-gradient(140deg, #fb6f60 0%, #fb366c 61%);
-        outline: 1px solid white;
+        outline: 1px solid var(--white-color);
         img{
-            outline: 1px solid white;
+            outline: 1px solid var(--white-color);
+        }
+        h4{
+            color: var(--white-color);
         }
     }
 }

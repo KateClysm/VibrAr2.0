@@ -9,6 +9,7 @@ function Footer () {
         <img src="/vibrarBlanco.png" alt="" className="footer-logo"/>
         <p>comunicamos tus sueños</p>
         
+
     </footer>
   );
 }

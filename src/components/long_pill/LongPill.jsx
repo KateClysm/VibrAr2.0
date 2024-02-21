@@ -4,7 +4,7 @@ function LongPill({ title, subtitle, text, color }) {
   const colored = `${color === true ? "colorfull" : ""}`;
 
   return (
-    <div className={`long-pill ${colored}`}>
+    <div className={`long-pill shadows ${colored}`}>
       <h3>{title}</h3>
       <h4 className="subtitle">{subtitle}</h4>
       <p>{text}</p>
